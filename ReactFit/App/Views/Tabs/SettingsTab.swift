@@ -1,15 +1,10 @@
-//
-//  SettingsTab.swift
-//  ReactFit
-//
-//  Created by Andrew Gilliland on 7/15/23.
-//
-
 import SwiftUI
 
 struct SettingsTab: View {
     var body: some View {
-        Text("Settings View")
+        TabLayout(title: "Settings", systemImage: "gearshape") {
+            Text("Update Settings")
+        }
     }
 }
 

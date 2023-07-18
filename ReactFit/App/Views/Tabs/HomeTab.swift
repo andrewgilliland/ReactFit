@@ -2,7 +2,9 @@ import SwiftUI
 
 struct HomeTab: View {
     var body: some View {
-        Text("Home View")
+        TabLayout(title: "Home", systemImage: "house") {
+            Text("Get it")
+        }
     }
 }
 

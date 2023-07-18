@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ReactFit
-//
-//  Created by Andrew Gilliland on 7/15/23.
-//
-
 import SwiftUI
 
 struct TabsView: View {

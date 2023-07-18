@@ -4,22 +4,7 @@ struct WorkoutsTab: View {
     let workouts: [String] = ["Chest", "Back", "Legs", "Arms", "Shoulders"]
 
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Workouts")
-                        .modifier(PrimaryHeading())
-
-                    Spacer()
-
-                    Image(systemName: "dumbbell")
-                        .foregroundColor(.indigo)
-                        .font(.system(size: 24))
-                }
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
-
+        TabLayout(title: "Workouts", systemImage: "dumbbell") {
             LazyVGrid(columns: createGridItems(), spacing: 8) {
                 ForEach(workouts, id: \.self) { workout in
                     NavigationLink(destination: WorkoutView(workout: workout)) {

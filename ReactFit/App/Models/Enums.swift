@@ -1,20 +1,28 @@
 
-enum MuscleGroup {
-    case lats
-    case chest
-    case shoulders
-    case traps
-    case glutes
-    case quads
-    case hamstrings
-    case hipFlexors
-    case calves
-    case abs
-    case biceps
-    case triceps
-    case forearms
-    case upperBack
-    case lowerBack
+enum MuscleGroup: String {
+    case lats = "Lats"
+    case chest = "Chest"
+    case shoulders = "Shoulders"
+    case traps = "Traps"
+    case glutes = "Glutess"
+    case quads = "Quads"
+    case hamstrings = "Hamstrings"
+    case hipFlexors = "Hip Flexors"
+    case calves = "Calves"
+    case abs = "Abs"
+    case biceps = "Biceps"
+    case triceps = "Triceps"
+    case forearms = "Forearms"
+    case upperBack = "Upper Back"
+    case lowerBack = "Lower Back"
+
+    init(stringLiteral value: String) {
+        if let option = Self(rawValue: value) {
+            self = option
+        } else {
+            fatalError("Invalid raw value: \(value)")
+        }
+    }
 }
 
 enum ExerciseType {
