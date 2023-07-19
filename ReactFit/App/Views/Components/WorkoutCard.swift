@@ -1,24 +1,20 @@
 import SwiftUI
 
-struct CardView: View {
-    let workout: String
+struct WorkoutCard: View {
+    let workout: Workout
 
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(workout)
+                Text(workout.name)
                     .modifier(SecondaryHeading())
                     .padding(.bottom, 2)
-
                 Spacer()
             }
             .padding(.leading, 8)
 
             HStack {
-                Text("Difficulty")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-
+                DifficultyRating(difficulty: workout.difficulty)
                 Spacer()
             }
             .padding(.leading, 8)
@@ -33,6 +29,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(workout: "Legs")
+        WorkoutCard(workout: Workout.defaultWorkout)
     }
 }

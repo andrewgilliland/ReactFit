@@ -1,25 +1,19 @@
 import SwiftUI
 
 struct WorkoutView: View {
-    let workout: String
+    let workout: Workout
 
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text(workout)
-                        .modifier(PrimaryHeading())
-
-                    Spacer()
-                }
+        TabLayout(title: workout.name, systemImage: "figure.highintensity.intervaltraining") {
+            ForEach(workout.exercises, id: \.self) { exercise in
+                ExerciseRow(exercise: exercise)
             }
-            .padding()
         }
     }
 }
 
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutView(workout: "Legs")
+        WorkoutView(workout: Workout.defaultWorkout)
     }
 }

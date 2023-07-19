@@ -1,5 +1,5 @@
 
-enum MuscleGroup: String {
+enum MuscleGroup: String, Hashable {
     case lats = "Lats"
     case chest = "Chest"
     case shoulders = "Shoulders"
@@ -25,7 +25,7 @@ enum MuscleGroup: String {
     }
 }
 
-enum ExerciseType {
+enum ExerciseType: String {
     case strength
     case olympicWeightlifting
     case warmup
@@ -33,7 +33,7 @@ enum ExerciseType {
     case smr // Self Myofascial Release
 }
 
-enum Equipment {
+enum Equipment: String {
     case bodyweight
     case dumbbell
     case cables
@@ -44,19 +44,19 @@ enum Equipment {
     case foamRoller
 }
 
-enum Mechanics {
+enum Mechanics: String {
     case compound
     case isolation
 }
 
-enum ForceType {
+enum ForceType: String {
     case pull
     case push
     case compression
     case dynamicStretching
 }
 
-enum Difficulty {
+enum Difficulty: String {
     case beginner
     case intermediate
     case advanced
