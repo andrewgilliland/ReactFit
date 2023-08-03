@@ -25,6 +25,12 @@
 		148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91A2A6812DF00EE962D /* ExerciseModal.swift */; };
 		148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91C2A6822EC00EE962D /* DifficultyRating.swift */; };
 		148EC9262A68624500EE962D /* ExerciseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9252A68624500EE962D /* ExerciseDetails.swift */; };
+		148EC9282A68C80D00EE962D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9272A68C80D00EE962D /* Theme.swift */; };
+		148EC92A2A69615D00EE962D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9292A69615D00EE962D /* Assets.swift */; };
+		148EC92C2A6965FF00EE962D /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC92B2A6965FF00EE962D /* SchemeType.swift */; };
+		148EC9362A69E13200EE962D /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9352A69E13200EE962D /* PieChart.swift */; };
+		148EC9382A69E16E00EE962D /* PieChartSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9372A69E16E00EE962D /* PieChartSlice.swift */; };
+		148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9F02A7BE85000EE962D /* Fonts.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -51,6 +57,12 @@
 		148EC91A2A6812DF00EE962D /* ExerciseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModal.swift; sourceTree = "<group>"; };
 		148EC91C2A6822EC00EE962D /* DifficultyRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyRating.swift; sourceTree = "<group>"; };
 		148EC9252A68624500EE962D /* ExerciseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetails.swift; sourceTree = "<group>"; };
+		148EC9272A68C80D00EE962D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		148EC9292A69615D00EE962D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		148EC92B2A6965FF00EE962D /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
+		148EC9352A69E13200EE962D /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		148EC9372A69E16E00EE962D /* PieChartSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSlice.swift; sourceTree = "<group>"; };
+		148EC9F02A7BE85000EE962D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -87,6 +99,10 @@
 				148EC8EE2A63101C00EE962D /* Exercise.swift */,
 				148EC8F02A63153000EE962D /* Enums.swift */,
 				148EC8F42A63161800EE962D /* Workout.swift */,
+				148EC9272A68C80D00EE962D /* Theme.swift */,
+				148EC9292A69615D00EE962D /* Assets.swift */,
+				148EC92B2A6965FF00EE962D /* SchemeType.swift */,
+				148EC9F02A7BE85000EE962D /* Fonts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +173,7 @@
 		148EC9072A65751B00EE962D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				148EC9342A69E0F400EE962D /* PieChart */,
 				148EC9082A65753800EE962D /* WorkoutCard.swift */,
 				148EC90C2A65814E00EE962D /* WorkoutView.swift */,
 				148EC9142A66DBAD00EE962D /* ExerciseRow.swift */,
@@ -165,6 +182,15 @@
 				148EC9252A68624500EE962D /* ExerciseDetails.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		148EC9342A69E0F400EE962D /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				148EC9352A69E13200EE962D /* PieChart.swift */,
+				148EC9372A69E16E00EE962D /* PieChartSlice.swift */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 		14F0B2102A6305330019497B = {
@@ -302,18 +328,24 @@
 				148EC8F32A63158300EE962D /* WorkoutsTab.swift in Sources */,
 				148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */,
 				148EC9062A656CD400EE962D /* Utility.swift in Sources */,
+				148EC9362A69E13200EE962D /* PieChart.swift in Sources */,
 				148EC9112A66B79500EE962D /* ExercisesTab.swift in Sources */,
 				148EC8F52A63161800EE962D /* Workout.swift in Sources */,
 				148EC9092A65753800EE962D /* WorkoutCard.swift in Sources */,
 				148EC8EF2A63101C00EE962D /* Exercise.swift in Sources */,
 				148EC8F72A63180C00EE962D /* SettingsTab.swift in Sources */,
+				148EC9382A69E16E00EE962D /* PieChartSlice.swift in Sources */,
 				148EC8F12A63153000EE962D /* Enums.swift in Sources */,
 				148EC9132A66B8D800EE962D /* TabLayout.swift in Sources */,
+				148EC92C2A6965FF00EE962D /* SchemeType.swift in Sources */,
 				148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */,
+				148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */,
+				148EC9282A68C80D00EE962D /* Theme.swift in Sources */,
 				14F0B21F2A6305330019497B /* TabsView.swift in Sources */,
 				148EC90B2A65765600EE962D /* ViewModifiers.swift in Sources */,
 				148EC9152A66DBAD00EE962D /* ExerciseRow.swift in Sources */,
 				148EC90D2A65814E00EE962D /* WorkoutView.swift in Sources */,
+				148EC92A2A69615D00EE962D /* Assets.swift in Sources */,
 				14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

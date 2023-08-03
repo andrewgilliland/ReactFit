@@ -3,7 +3,10 @@ import SwiftUI
 struct HomeTab: View {
     var body: some View {
         TabLayout(title: "Home", systemImage: "house") {
-            Text("Get it")
+            Assets
+                .gym1
+                .resizable()
+                .frame(width: 360, height: 240)
         }
     }
 }

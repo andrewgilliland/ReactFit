@@ -32,14 +32,23 @@ struct TabsView: View {
                         Text("Settings")
                     }
             }
-            .accentColor(.indigo)
+            .accentColor(Theme.indigo700)
         }
-        .preferredColorScheme(.dark)
+//        .preferredColorScheme(.dark)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabsView()
+        Group {
+            TabsView()
+                .previewDisplayName("Light Mode")
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
+
+            TabsView()
+                .previewDisplayName("Dark Mode")
+                .preferredColorScheme(.dark)
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
+        }
     }
 }

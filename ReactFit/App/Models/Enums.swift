@@ -52,6 +52,7 @@ enum Mechanics: String {
 enum ForceType: String {
     case pull
     case push
+    case `static`
     case compression
     case dynamicStretching
 }
