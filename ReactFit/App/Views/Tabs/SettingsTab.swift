@@ -3,7 +3,6 @@ import SwiftUI
 struct SettingsTab: View {
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
     @Environment(\.colorScheme) private var colorScheme
-
     @State private var languageCode = LanguageCode.english
 
     private var colorSchemeText: String { colorScheme == .light ? "Light" : "Dark" }
@@ -35,28 +34,32 @@ struct SettingsTab: View {
                     } label: {
                         Text("Pick a theme")
                     }
+                    Spacer()
                 }
 
                 HStack {
+                    Text("Language".localized())
                     Picker(selection: $languageCode) {
                         ForEach(LanguageCode.allCases) { item in
-                            Text(item.rawValue)
+                            Text(item.title)
                                 .tag(item.rawValue)
                         }
                     } label: {
                         Text("Pick a language")
                     }
+                    Spacer()
                 }
 //                PieChart(data: [25, 25, 25, 25])
 //                    .frame(width: 200, height: 200)
 //                    .padding(.top, 200)
 //                    .padding(.leading, 50)
             }
+            .padding(.horizontal)
         }
         .preferredColorScheme(selectedScheme)
         .onChange(of: languageCode) { _ in
-            print(languageCode)
-            LocalizationService.shared.languageCode = languageCode
+            print("SettingsTab: \(languageCode)")
+            LocalizationService.shared.languageCode = .spanish
         }
     }
 }
