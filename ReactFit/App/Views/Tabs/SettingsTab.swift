@@ -4,6 +4,8 @@ struct SettingsTab: View {
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
     @Environment(\.colorScheme) private var colorScheme
 
+    @State private var languageCode = LanguageCode.english
+
     private var colorSchemeText: String { colorScheme == .light ? "Light" : "Dark" }
 
     private var selectedScheme: ColorScheme? {
@@ -34,13 +36,28 @@ struct SettingsTab: View {
                         Text("Pick a theme")
                     }
                 }
-                PieChart(data: [25, 25, 25, 25])
-                    .frame(width: 200, height: 200)
-                    .padding(.top, 200)
-                    .padding(.leading, 50)
+
+                HStack {
+                    Picker(selection: $languageCode) {
+                        ForEach(LanguageCode.allCases) { item in
+                            Text(item.rawValue)
+                                .tag(item.rawValue)
+                        }
+                    } label: {
+                        Text("Pick a language")
+                    }
+                }
+//                PieChart(data: [25, 25, 25, 25])
+//                    .frame(width: 200, height: 200)
+//                    .padding(.top, 200)
+//                    .padding(.leading, 50)
             }
         }
         .preferredColorScheme(selectedScheme)
+        .onChange(of: languageCode) { _ in
+            print(languageCode)
+            LocalizationService.shared.languageCode = languageCode
+        }
     }
 }
 

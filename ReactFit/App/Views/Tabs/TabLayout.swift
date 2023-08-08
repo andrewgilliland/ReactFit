@@ -9,7 +9,7 @@ struct TabLayout<Content: View>: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 HStack {
-                    Text(title)
+                    Text(title.localized())
                         .modifier(PrimaryHeading())
 
                     Spacer()

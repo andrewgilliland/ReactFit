@@ -31,6 +31,10 @@
 		148EC9362A69E13200EE962D /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9352A69E13200EE962D /* PieChart.swift */; };
 		148EC9382A69E16E00EE962D /* PieChartSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9372A69E16E00EE962D /* PieChartSlice.swift */; };
 		148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9F02A7BE85000EE962D /* Fonts.swift */; };
+		148ECA062A81C70800EE962D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 148ECA082A81C70800EE962D /* Localizable.strings */; };
+		148ECA0B2A81C76C00EE962D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA0A2A81C76C00EE962D /* String.swift */; };
+		148ECA0D2A81CADA00EE962D /* LanguageCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA0C2A81CADA00EE962D /* LanguageCodes.swift */; };
+		148ECA0F2A81D3F800EE962D /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA0E2A81D3F800EE962D /* LocalizationService.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -63,6 +67,11 @@
 		148EC9352A69E13200EE962D /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		148EC9372A69E16E00EE962D /* PieChartSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSlice.swift; sourceTree = "<group>"; };
 		148EC9F02A7BE85000EE962D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		148ECA072A81C70800EE962D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		148ECA092A81C70D00EE962D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		148ECA0A2A81C76C00EE962D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		148ECA0C2A81CADA00EE962D /* LanguageCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCodes.swift; sourceTree = "<group>"; };
+		148ECA0E2A81D3F800EE962D /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -103,6 +112,8 @@
 				148EC9292A69615D00EE962D /* Assets.swift */,
 				148EC92B2A6965FF00EE962D /* SchemeType.swift */,
 				148EC9F02A7BE85000EE962D /* Fonts.swift */,
+				148ECA0C2A81CADA00EE962D /* LanguageCodes.swift */,
+				148ECA0E2A81D3F800EE962D /* LocalizationService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				148EC8FF2A6545E100EE962D /* ViewModifiers */,
+				148ECA0A2A81C76C00EE962D /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				148EC8F82A64E5D300EE962D /* Info.plist */,
+				148ECA082A81C70800EE962D /* Localizable.strings */,
 				148EC9002A65469F00EE962D /* App */,
 				148EC8FE2A6545CE00EE962D /* Extensions */,
 				148EC9012A6546E400EE962D /* Resources */,
@@ -272,6 +285,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 14F0B2102A6305330019497B;
 			productRefGroup = 14F0B21A2A6305330019497B /* Products */;
@@ -288,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148ECA062A81C70800EE962D /* Localizable.strings in Resources */,
 				14F0B2242A6305340019497B /* Preview Assets.xcassets in Resources */,
 				14F0B2212A6305340019497B /* Assets.xcassets in Resources */,
 				148EC8FA2A64E86600EE962D /* SourceCodePro-VariableFont_wght.ttf in Resources */,
@@ -325,6 +340,7 @@
 			files = (
 				148EC9262A68624500EE962D /* ExerciseDetails.swift in Sources */,
 				148EC8EC2A630F1F00EE962D /* HomeTab.swift in Sources */,
+				148ECA0F2A81D3F800EE962D /* LocalizationService.swift in Sources */,
 				148EC8F32A63158300EE962D /* WorkoutsTab.swift in Sources */,
 				148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */,
 				148EC9062A656CD400EE962D /* Utility.swift in Sources */,
@@ -340,23 +356,38 @@
 				148EC92C2A6965FF00EE962D /* SchemeType.swift in Sources */,
 				148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */,
 				148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */,
+				148ECA0B2A81C76C00EE962D /* String.swift in Sources */,
 				148EC9282A68C80D00EE962D /* Theme.swift in Sources */,
 				14F0B21F2A6305330019497B /* TabsView.swift in Sources */,
 				148EC90B2A65765600EE962D /* ViewModifiers.swift in Sources */,
 				148EC9152A66DBAD00EE962D /* ExerciseRow.swift in Sources */,
 				148EC90D2A65814E00EE962D /* WorkoutView.swift in Sources */,
 				148EC92A2A69615D00EE962D /* Assets.swift in Sources */,
+				148ECA0D2A81CADA00EE962D /* LanguageCodes.swift in Sources */,
 				14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		148ECA082A81C70800EE962D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148ECA072A81C70800EE962D /* en */,
+				148ECA092A81C70D00EE962D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		14F0B2252A6305340019497B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -417,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
