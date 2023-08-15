@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct TabsView: View {
+    @State private var languageCode = LanguageCode.english
+
     var body: some View {
         NavigationView {
             TabView {
-                HomeTab()
+                HomeTab(languageCode: $languageCode)
                     .tabItem {
                         Image(systemName: "house")
-                        Text("Home")
+                        Text("Home".localized(languageCode: languageCode.rawValue))
                     }
 
                 NavigationView {
@@ -15,21 +17,21 @@ struct TabsView: View {
                 }
                 .tabItem {
                     Image(systemName: "dumbbell")
-                    Text("Workouts")
+                    Text("Workouts".localized(languageCode: languageCode.rawValue))
                 }
 
                 NavigationView {
-                    ExercisesTab()
+                    ExercisesTab(languageCode: $languageCode)
                 }
                 .tabItem {
                     Image(systemName: "figure.highintensity.intervaltraining")
-                    Text("Exercises")
+                    Text("Exercises".localized(languageCode: languageCode.rawValue))
                 }
 
-                SettingsTab()
+                SettingsTab(languageCode: $languageCode)
                     .tabItem {
                         Image(systemName: "gearshape")
-                        Text("Settings")
+                        Text("Settings".localized(languageCode: languageCode.rawValue))
                     }
             }
             .accentColor(Theme.indigo700)

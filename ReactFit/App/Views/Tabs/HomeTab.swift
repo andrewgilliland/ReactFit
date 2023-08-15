@@ -1,8 +1,10 @@
 import SwiftUI
 
 struct HomeTab: View {
+    @Binding var languageCode: LanguageCode
+
     var body: some View {
-        TabLayout(title: "Home", systemImage: "house") {
+        TabLayout(title: "Home".localized(languageCode: languageCode.rawValue), systemImage: "house") {
             Assets
                 .gym1
                 .resizable()
@@ -13,6 +15,6 @@ struct HomeTab: View {
 
 struct HomeTab_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTab()
+        HomeTab(languageCode: .constant(.english))
     }
 }

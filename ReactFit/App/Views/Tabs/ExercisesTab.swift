@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ExercisesTab: View {
+    @Binding var languageCode: LanguageCode
+
     let exercises: [Exercise] = [
         Exercise(name: "Lat Pull Down", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps]),
         Exercise(name: "Wide Grip Pull Up", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps]),
@@ -9,7 +11,7 @@ struct ExercisesTab: View {
     ]
 
     var body: some View {
-        TabLayout(title: "Exercises", systemImage: "figure.highintensity.intervaltraining") {
+        TabLayout(title: "Exercises".localized(languageCode: languageCode.rawValue), systemImage: "figure.highintensity.intervaltraining") {
             ForEach(exercises, id: \.self) { exercise in
                 ExerciseRow(exercise: exercise)
             }
@@ -19,6 +21,6 @@ struct ExercisesTab: View {
 
 struct ExercisesTab_Previews: PreviewProvider {
     static var previews: some View {
-        ExercisesTab()
+        ExercisesTab(languageCode: .constant(.english))
     }
 }

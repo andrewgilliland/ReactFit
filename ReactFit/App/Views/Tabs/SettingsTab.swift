@@ -3,7 +3,7 @@ import SwiftUI
 struct SettingsTab: View {
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
     @Environment(\.colorScheme) private var colorScheme
-    @State private var languageCode = LanguageCode.english
+    @Binding var languageCode: LanguageCode
 
     private var colorSchemeText: String { colorScheme == .light ? "Light" : "Dark" }
 
@@ -21,14 +21,14 @@ struct SettingsTab: View {
     }
 
     var body: some View {
-        TabLayout(title: "Settings", systemImage: "gearshape") {
+        TabLayout(title: "Settings".localized(languageCode: languageCode.rawValue), systemImage: "gearshape") {
             VStack {
                 HStack {
-                    Text("\(colorSchemeText) Mode")
+                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode.rawValue))
 
                     Picker(selection: $systemTheme) {
                         ForEach(SchemeType.allCases) { item in
-                            Text(item.title)
+                            Text(item.title.localized(languageCode: languageCode.rawValue))
                                 .tag(item.rawValue)
                         }
                     } label: {
@@ -38,10 +38,10 @@ struct SettingsTab: View {
                 }
 
                 HStack {
-                    Text("Language".localized())
+                    Text("Language".localized(languageCode: languageCode.rawValue))
                     Picker(selection: $languageCode) {
                         ForEach(LanguageCode.allCases) { item in
-                            Text(item.title)
+                            Text(item.title.localized(languageCode: languageCode.rawValue))
                                 .tag(item.rawValue)
                         }
                     } label: {
@@ -49,23 +49,18 @@ struct SettingsTab: View {
                     }
                     Spacer()
                 }
-//                PieChart(data: [25, 25, 25, 25])
-//                    .frame(width: 200, height: 200)
-//                    .padding(.top, 200)
-//                    .padding(.leading, 50)
             }
             .padding(.horizontal)
         }
         .preferredColorScheme(selectedScheme)
         .onChange(of: languageCode) { _ in
-            print("SettingsTab: \(languageCode)")
-            LocalizationService.shared.languageCode = .spanish
+            print("SettingsTab: \(languageCode.rawValue)")
         }
     }
 }
 
 struct SettingsTab_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsTab()
+        SettingsTab(languageCode: .constant(.english))
     }
 }

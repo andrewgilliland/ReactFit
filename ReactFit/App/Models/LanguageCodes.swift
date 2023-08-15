@@ -9,9 +9,9 @@ extension LanguageCode {
     var title: String {
         switch self {
         case .english:
-            return "english"
+            return "English"
         case .spanish:
-            return "spanish"
+            return "Spanish"
         }
     }
 }
