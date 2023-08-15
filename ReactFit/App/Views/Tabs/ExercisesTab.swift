@@ -11,7 +11,7 @@ struct ExercisesTab: View {
     ]
 
     var body: some View {
-        TabLayout(title: "Exercises".localized(languageCode: languageCode.rawValue), systemImage: "figure.highintensity.intervaltraining") {
+        TabLayout(title: "Exercises".localized(languageCode: languageCode), systemImage: "figure.highintensity.intervaltraining") {
             ForEach(exercises, id: \.self) { exercise in
                 ExerciseRow(exercise: exercise)
             }

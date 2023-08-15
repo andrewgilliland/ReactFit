@@ -21,14 +21,14 @@ struct SettingsTab: View {
     }
 
     var body: some View {
-        TabLayout(title: "Settings".localized(languageCode: languageCode.rawValue), systemImage: "gearshape") {
+        TabLayout(title: "Settings".localized(languageCode: languageCode), systemImage: "gearshape") {
             VStack {
                 HStack {
-                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode.rawValue))
+                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode))
 
                     Picker(selection: $systemTheme) {
                         ForEach(SchemeType.allCases) { item in
-                            Text(item.title.localized(languageCode: languageCode.rawValue))
+                            Text(item.title.localized(languageCode: languageCode))
                                 .tag(item.rawValue)
                         }
                     } label: {
@@ -38,10 +38,10 @@ struct SettingsTab: View {
                 }
 
                 HStack {
-                    Text("Language".localized(languageCode: languageCode.rawValue))
+                    Text("Language".localized(languageCode: languageCode))
                     Picker(selection: $languageCode) {
                         ForEach(LanguageCode.allCases) { item in
-                            Text(item.title.localized(languageCode: languageCode.rawValue))
+                            Text(item.title.localized(languageCode: languageCode))
                                 .tag(item.rawValue)
                         }
                     } label: {
@@ -53,9 +53,7 @@ struct SettingsTab: View {
             .padding(.horizontal)
         }
         .preferredColorScheme(selectedScheme)
-        .onChange(of: languageCode) { _ in
-            print("SettingsTab: \(languageCode.rawValue)")
-        }
+      
     }
 }
 

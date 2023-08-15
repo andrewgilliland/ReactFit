@@ -9,7 +9,7 @@ struct TabsView: View {
                 HomeTab(languageCode: $languageCode)
                     .tabItem {
                         Image(systemName: "house")
-                        Text("Home".localized(languageCode: languageCode.rawValue))
+                        Text("Home".localized(languageCode: languageCode))
                     }
 
                 NavigationView {
@@ -17,7 +17,7 @@ struct TabsView: View {
                 }
                 .tabItem {
                     Image(systemName: "dumbbell")
-                    Text("Workouts".localized(languageCode: languageCode.rawValue))
+                    Text("Workouts".localized(languageCode: languageCode))
                 }
 
                 NavigationView {
@@ -25,13 +25,13 @@ struct TabsView: View {
                 }
                 .tabItem {
                     Image(systemName: "figure.highintensity.intervaltraining")
-                    Text("Exercises".localized(languageCode: languageCode.rawValue))
+                    Text("Exercises".localized(languageCode: languageCode))
                 }
 
                 SettingsTab(languageCode: $languageCode)
                     .tabItem {
                         Image(systemName: "gearshape")
-                        Text("Settings".localized(languageCode: languageCode.rawValue))
+                        Text("Settings".localized(languageCode: languageCode))
                     }
             }
             .accentColor(Theme.indigo700)

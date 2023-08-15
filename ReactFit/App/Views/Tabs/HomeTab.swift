@@ -4,7 +4,7 @@ struct HomeTab: View {
     @Binding var languageCode: LanguageCode
 
     var body: some View {
-        TabLayout(title: "Home".localized(languageCode: languageCode.rawValue), systemImage: "house") {
+        TabLayout(title: "Home".localized(languageCode: languageCode), systemImage: "house") {
             Assets
                 .gym1
                 .resizable()

@@ -1,10 +1,8 @@
 import Foundation
 
 extension String {
-    func localized(languageCode: String) -> String {
-        print("localized languageCode: \(languageCode)")
-
-        if let path = Bundle.main.path(forResource: languageCode, ofType: "lproj"),
+    func localized(languageCode: LanguageCode) -> String {
+        if let path = Bundle.main.path(forResource: languageCode.rawValue, ofType: "lproj"),
            let bundle = Bundle(path: path)
         {
             let localizedString = NSLocalizedString(self, bundle: bundle, value: self, comment: self)
