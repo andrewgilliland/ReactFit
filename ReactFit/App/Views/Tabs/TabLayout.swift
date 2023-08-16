@@ -15,7 +15,7 @@ struct TabLayout<Content: View>: View {
                     Spacer()
 
                     Image(systemName: systemImage)
-                        .foregroundColor(.indigo)
+                        .foregroundColor(.screenHeading)
                         .font(.system(size: 24))
                 }
             }
@@ -24,5 +24,6 @@ struct TabLayout<Content: View>: View {
 
             content()
         }
+        .background(Color.mainBackground)
     }
 }

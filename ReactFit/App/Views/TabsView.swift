@@ -34,9 +34,9 @@ struct TabsView: View {
                         Text("Settings".localized(languageCode: languageCode))
                     }
             }
-            .accentColor(Theme.indigo700)
+            .accentColor(.tabIcon)
+            .background(.red)
         }
-//        .preferredColorScheme(.dark)
     }
 }
 

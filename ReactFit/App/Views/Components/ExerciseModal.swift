@@ -16,7 +16,7 @@ struct ExerciseModal: View {
                     presentationMode.wrappedValue.dismiss()
                 }) {
                     Image(systemName: "xmark.circle")
-                        .foregroundColor(.indigo)
+                        .foregroundColor(.screenHeading)
                         .font(.system(size: 24))
                 }
             }

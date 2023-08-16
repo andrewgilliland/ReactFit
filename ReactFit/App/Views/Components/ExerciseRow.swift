@@ -18,7 +18,7 @@ struct ExerciseRow: View {
                         .foregroundColor(.white)
                     Text(exercise.targetMuscleGroup.rawValue)
                         .font(.custom(Fonts.sourceCodePro, size: 14))
-                        .foregroundColor(.white.opacity(0.6))
+                        .foregroundColor(.cardCopy)
                 }
 
                 Spacer()

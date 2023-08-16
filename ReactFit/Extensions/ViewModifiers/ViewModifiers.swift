@@ -3,7 +3,7 @@ import SwiftUI
 struct PrimaryHeading: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom(Fonts.sourceCodePro, size: 24)).foregroundColor(.indigo).fontWeight(.semibold)
+            .font(.custom(Fonts.sourceCodePro, size: 24)).foregroundColor(.screenHeading).fontWeight(.semibold)
     }
 }
 

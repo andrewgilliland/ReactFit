@@ -53,7 +53,6 @@ struct SettingsTab: View {
             .padding(.horizontal)
         }
         .preferredColorScheme(selectedScheme)
-      
     }
 }
 
