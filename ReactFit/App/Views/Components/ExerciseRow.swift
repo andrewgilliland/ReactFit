@@ -15,7 +15,7 @@ struct ExerciseRow: View {
                     Text(exercise.name)
                         .font(.custom(Fonts.sourceCodePro, size: 16))
                         .fontWeight(.semibold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.cardHeading)
                     Text(exercise.targetMuscleGroup.rawValue)
                         .font(.custom(Fonts.sourceCodePro, size: 14))
                         .foregroundColor(.cardCopy)

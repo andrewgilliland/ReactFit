@@ -25,6 +25,10 @@ extension Color {
         Self(light: Theme.emerald600, dark: Theme.emerald400)
     }
 
+    static var cardHeading: Self {
+        Self(light: Theme.gray900, dark: Theme.gray100)
+    }
+
     static var cardCopy: Self {
         Self(light: Theme.gray600,
              dark: Theme.gray400)
