@@ -6,24 +6,29 @@ struct TabLayout<Content: View>: View {
     let content: () -> Content
 
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text(title)
-                        .modifier(PrimaryHeading())
+        ZStack {
+            LinearGradient(gradient:
+                Gradient(colors: [.mainGradientTop, .mainGradientBottom]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
 
-                    Spacer()
+            ScrollView(.vertical) {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(title)
+                            .modifier(PrimaryHeading())
 
-                    Image(systemName: systemImage)
-                        .foregroundColor(.screenHeading)
-                        .font(.system(size: 24))
+                        Spacer()
+
+                        Image(systemName: systemImage)
+                            .foregroundColor(.screenHeading)
+                            .font(.system(size: 24))
+                    }
                 }
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
 
-            content()
+                content()
+            }
         }
-        .background(Color.mainBackground)
     }
 }

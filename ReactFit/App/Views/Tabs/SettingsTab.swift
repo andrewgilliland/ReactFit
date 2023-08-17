@@ -23,19 +23,19 @@ struct SettingsTab: View {
     var body: some View {
         TabLayout(title: "Settings".localized(languageCode: languageCode), systemImage: "gearshape") {
             VStack {
-                HStack {
-                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode))
-
-                    Picker(selection: $systemTheme) {
-                        ForEach(SchemeType.allCases) { item in
-                            Text(item.title.localized(languageCode: languageCode))
-                                .tag(item.rawValue)
-                        }
-                    } label: {
-                        Text("Pick a theme")
-                    }
-                    Spacer()
-                }
+//                HStack {
+//                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode))
+//
+//                    Picker(selection: $systemTheme) {
+//                        ForEach(SchemeType.allCases) { item in
+//                            Text(item.title.localized(languageCode: languageCode))
+//                                .tag(item.rawValue)
+//                        }
+//                    } label: {
+//                        Text("Pick a theme")
+//                    }
+//                    Spacer()
+//                }
 
                 HStack {
                     Text("Language".localized(languageCode: languageCode))
@@ -52,7 +52,6 @@ struct SettingsTab: View {
             }
             .padding(.horizontal)
         }
-        .preferredColorScheme(selectedScheme)
     }
 }
 

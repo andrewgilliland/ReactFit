@@ -12,8 +12,8 @@ extension Color {
 }
 
 extension Color {
-    static var mainBackground: Self {
-        Self(light: Theme.indigo50,
+    static var mainGradientTop: Self {
+        Self(light: Theme.indigo600,
              dark: Theme.indigo950)
     }
 
@@ -32,5 +32,9 @@ extension Color {
     static var cardCopy: Self {
         Self(light: Theme.gray600,
              dark: Theme.gray400)
+    }
+
+    static var mainGradientBottom: Self {
+        Self(light: Theme.gray50, dark: .black)
     }
 }

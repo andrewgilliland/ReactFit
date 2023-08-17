@@ -11,6 +11,14 @@ struct TabsView: View {
                         Image(systemName: "house")
                         Text("Home".localized(languageCode: languageCode))
                     }
+                NavigationView {
+                    // ProgramsTab goes here
+                    Text("Programs")
+                }
+                .tabItem {
+                    Image(systemName: "bolt")
+                    Text("Programs".localized(languageCode: languageCode))
+                }
 
                 NavigationView {
                     WorkoutsTab()
