@@ -66,6 +66,6 @@ struct ExerciseRow: View {
 
 struct ExerciseRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseRow(exercise: Exercise.defaultExercise)
+        ExerciseRow(exercise: .latPullDown)
     }
 }

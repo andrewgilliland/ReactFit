@@ -14,7 +14,7 @@ struct WorkoutCard: View {
             .padding(.leading, 8)
 
             HStack {
-                DifficultyRating(difficulty: workout.difficulty)
+                DifficultyRating(difficulty: workout.difficulty, color: Theme.indigo700)
                 Spacer()
             }
             .padding(.leading, 8)
@@ -29,6 +29,6 @@ struct WorkoutCard: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutCard(workout: Workout.defaultWorkout)
+        WorkoutCard(workout: .defaultBackWorkout)
     }
 }

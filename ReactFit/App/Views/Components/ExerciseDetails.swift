@@ -55,6 +55,6 @@ struct ExerciseDetails: View {
 
 struct ExerciseDetails_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseDetails(exercise: Exercise.defaultExercise)
+        ExerciseDetails(exercise: .latPullDown)
     }
 }

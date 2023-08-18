@@ -31,6 +31,6 @@ struct ExerciseModal: View {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseModal(exercise: Exercise.defaultExercise)
+        ExerciseModal(exercise: .latPullDown)
     }
 }

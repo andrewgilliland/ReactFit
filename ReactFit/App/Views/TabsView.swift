@@ -12,11 +12,10 @@ struct TabsView: View {
                         Text("Home".localized(languageCode: languageCode))
                     }
                 NavigationView {
-                    // ProgramsTab goes here
-                    Text("Programs")
+                    ProgramsTab()
                 }
                 .tabItem {
-                    Image(systemName: "bolt")
+                    Image(systemName: "calendar")
                     Text("Programs".localized(languageCode: languageCode))
                 }
 
@@ -43,7 +42,6 @@ struct TabsView: View {
                     }
             }
             .accentColor(.tabIcon)
-            .background(.red)
         }
     }
 }

@@ -21,7 +21,7 @@ struct SettingsTab: View {
     }
 
     var body: some View {
-        TabLayout(title: "Settings".localized(languageCode: languageCode), systemImage: "gearshape") {
+        TabLayout(title: "Settings".localized(languageCode: languageCode)) {
             VStack {
 //                HStack {
 //                    Text("\(colorSchemeText) Mode".localized(languageCode: languageCode))

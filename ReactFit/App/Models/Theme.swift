@@ -15,6 +15,18 @@ enum Theme {
     static let gray900 = Color("Gray900")
     static let gray950 = Color("Gray950")
 
+    static let yellow50 = Color("Yellow50")
+    static let yellow100 = Color("Yellow100")
+    static let yellow200 = Color("Yellow200")
+    static let yellow300 = Color("Yellow300")
+    static let yellow400 = Color("Yellow400")
+    static let yellow500 = Color("Yellow500")
+    static let yellow600 = Color("Yellow600")
+    static let yellow700 = Color("Yellow700")
+    static let yellow800 = Color("Yellow800")
+    static let yellow900 = Color("Yellow900")
+    static let yellow950 = Color("Yellow950")
+
     static let emerald50 = Color("Emerald50")
     static let emerald100 = Color("Emerald100")
     static let emerald200 = Color("Emerald200")

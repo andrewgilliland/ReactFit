@@ -4,7 +4,7 @@ struct WorkoutView: View {
     let workout: Workout
 
     var body: some View {
-        TabLayout(title: workout.name, systemImage: "figure.highintensity.intervaltraining") {
+        TabLayout(title: workout.name) {
             ForEach(workout.exercises, id: \.self) { exercise in
                 ExerciseRow(exercise: exercise)
             }
@@ -14,6 +14,6 @@ struct WorkoutView: View {
 
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutView(workout: Workout.defaultWorkout)
+        WorkoutView(workout: .defaultBackWorkout)
     }
 }

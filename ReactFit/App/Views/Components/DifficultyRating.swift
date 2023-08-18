@@ -1,42 +1,36 @@
-//
-//  DifficultyRating.swift
-//  ReactFit
-//
-//  Created by Andrew Gilliland on 7/19/23.
-//
-
 import SwiftUI
 
 struct DifficultyRating: View {
     let difficulty: Difficulty
+    let color: Color
 
     var body: some View {
         switch difficulty {
         case .beginner: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
             }
 
         case .intermediate: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
             }
 
         case .advanced: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
                 Image(systemName: "star.fill")
-                    .foregroundColor(.indigo)
+                    .foregroundColor(color)
             }
         }
     }
@@ -44,6 +38,6 @@ struct DifficultyRating: View {
 
 struct DifficultyRating_Previews: PreviewProvider {
     static var previews: some View {
-        DifficultyRating(difficulty: .intermediate)
+        DifficultyRating(difficulty: .intermediate, color: .indigo)
     }
 }

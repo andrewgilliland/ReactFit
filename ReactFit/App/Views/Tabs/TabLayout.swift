@@ -2,7 +2,6 @@ import SwiftUI
 
 struct TabLayout<Content: View>: View {
     let title: String
-    let systemImage: String
     let content: () -> Content
 
     var body: some View {
@@ -18,10 +17,6 @@ struct TabLayout<Content: View>: View {
                             .modifier(PrimaryHeading())
 
                         Spacer()
-
-                        Image(systemName: systemImage)
-                            .foregroundColor(.screenHeading)
-                            .font(.system(size: 24))
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

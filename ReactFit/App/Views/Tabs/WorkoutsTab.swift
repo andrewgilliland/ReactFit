@@ -1,13 +1,10 @@
 import SwiftUI
 
 struct WorkoutsTab: View {
-    let workouts: [Workout] = [Workout.defaultWorkout,
-                               Workout(name: "Core Blast",
-                                       difficulty: .intermediate,
-                                       exercises: [Exercise(name: "Plank", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .static, difficulty: .beginner, secondaryMuscles: [.lowerBack], sets: [Set(seconds: 30), Set(seconds: 45), Set(seconds: 60)])])]
+    let workouts: [Workout] = [.defaultBackWorkout, .defaultCoreWorkout]
 
     var body: some View {
-        TabLayout(title: "Workouts", systemImage: "dumbbell") {
+        TabLayout(title: "Workouts") {
             LazyVGrid(columns: createGridItems(), spacing: 8) {
                 ForEach(workouts, id: \.self) { workout in
                     NavigationLink(destination: WorkoutView(workout: workout)) {
