@@ -6,7 +6,7 @@ struct WorkoutView: View {
     var body: some View {
         TabLayout(title: workout.name) {
             ForEach(workout.exercises, id: \.self) { exercise in
-                WorkoutExerciseRow(exercise: exercise)
+                WorkoutExerciseCard(exercise: exercise, index: workout.exercises.firstIndex(of: exercise)! + 1)
             }
         }
     }

@@ -14,7 +14,6 @@ struct ExercisesTab: View {
     var body: some View {
         TabLayout(title: "Exercises".localized(languageCode: languageCode)) {
             ForEach(exercises, id: \.self) { exercise in
-//                ExerciseRow(exercise: exercise)
                 ExerciseView(exercise: exercise)
             }
         }

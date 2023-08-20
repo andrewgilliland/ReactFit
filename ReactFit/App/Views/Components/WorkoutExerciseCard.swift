@@ -1,15 +1,23 @@
 import SwiftUI
 
-struct WorkoutExerciseRow: View {
+struct WorkoutExerciseCard: View {
     let exercise: WorkoutExercise
+    let index: Int
     @State private var showModal = false
 
     var body: some View {
         VStack {
             HStack {
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.indigo)
-                    .frame(width: 40, height: 40)
+                ZStack {
+                    Rectangle()
+                        .fill(Theme.indigo600)
+                        .cornerRadius(4)
+                        .frame(width: 40, height: 40)
+
+                    Text("\(index)")
+                        .font(.custom(Fonts.sourceCodePro, size: 16))
+                        .foregroundColor(.cardHeading)
+                }
 
                 VStack(alignment: .leading) {
                     Text(exercise.name)
@@ -59,11 +67,15 @@ struct WorkoutExerciseRow: View {
                 }
             }
         }
+        .padding(.top, 8)
+        .padding(.bottom, 8)
+        .background(Theme.indigo700.opacity(0.3))
+        .cornerRadius(4)
     }
 }
 
 struct WorkoutExerciseRow_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutExerciseRow(exercise: .latPullDown1512108)
+        WorkoutExerciseCard(exercise: .latPullDown1512108, index: 1)
     }
 }
