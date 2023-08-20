@@ -20,5 +20,68 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B9EEB16-FEE2-437C-A620-CC62AECB44A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReactFit/App/Views/Components/ExerciseRow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "8B9EEB16-FEE2-437C-A620-CC62AECB44A1 - ed0039ad5c80c1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReactFit.ExerciseRow.init(exercise: ReactFit.Exercise) -&gt; ReactFit.ExerciseRow"
+                  moduleName = "ReactFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrew.gilliland/Code/Swift/ReactFit/ReactFit/App/Views/Components/ExerciseRow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "8B9EEB16-FEE2-437C-A620-CC62AECB44A1 - ed0039ad5c80c1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReactFit.ExerciseRow.init(exercise: ReactFit.Exercise) -&gt; ReactFit.ExerciseRow"
+                  moduleName = "ReactFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrew.gilliland/Code/Swift/ReactFit/ReactFit/App/Views/Components/ExerciseRow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "8B9EEB16-FEE2-437C-A620-CC62AECB44A1 - c4b1eaec4ef4476a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReactFit.ExerciseView.init(exercise: ReactFit.Exercise) -&gt; ReactFit.ExerciseView"
+                  moduleName = "ReactFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrew.gilliland/Code/Swift/ReactFit/ReactFit/App/Views/Components/ExerciseRow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

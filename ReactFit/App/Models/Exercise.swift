@@ -1,29 +1,8 @@
 
 // https://www.muscleandstrength.com/exercises
 
-struct Set: Hashable {
-    let repetitions: Int?
-    let seconds: Int?
-
-    init(repetitions: Int) {
-        self.repetitions = repetitions
-        seconds = nil
-    }
-
-    init(seconds: Int) {
-        self.seconds = seconds
-        repetitions = nil
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(repetitions)
-        hasher.combine(seconds)
-    }
-}
-
-struct Exercise {
+class Exercise {
     let name: String
-    var description: String?
     let targetMuscleGroup: MuscleGroup
     let exerciseType: ExerciseType
     let equipment: Equipment
@@ -31,7 +10,17 @@ struct Exercise {
     let forceType: ForceType
     let difficulty: Difficulty
     let secondaryMuscles: [MuscleGroup]
-    var sets: [Set]? // could be a type of seconds or reps
+
+    init(name: String, targetMuscleGroup: MuscleGroup, exerciseType: ExerciseType, equipment: Equipment, mechanics: Mechanics, forceType: ForceType, difficulty: Difficulty, secondaryMuscles: [MuscleGroup]) {
+        self.name = name
+        self.targetMuscleGroup = targetMuscleGroup
+        self.exerciseType = exerciseType
+        self.equipment = equipment
+        self.mechanics = mechanics
+        self.forceType = forceType
+        self.difficulty = difficulty
+        self.secondaryMuscles = secondaryMuscles
+    }
 
     static let latPullDown = Exercise(name: "Lat Pull Down", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps])
 
@@ -46,8 +35,6 @@ struct Exercise {
     static let dumbbellBenchPress = Exercise(name: "Dumbbell Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
 
     static let invertedRow = Exercise(name: "Inverted Row", targetMuscleGroup: .upperBack, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.lats, .biceps])
-
-    static let plank = Exercise(name: "Plank", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .static, difficulty: .beginner, secondaryMuscles: [.lowerBack], sets: [Set(seconds: 30), Set(seconds: 45), Set(seconds: 60)])
 }
 
 extension Exercise: Equatable, Hashable {

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ExercisesTab: View {
     @Binding var languageCode: LanguageCode
+    @State private var showModal = false
 
     let exercises: [Exercise] = [
         .latPullDown,
@@ -13,7 +14,8 @@ struct ExercisesTab: View {
     var body: some View {
         TabLayout(title: "Exercises".localized(languageCode: languageCode)) {
             ForEach(exercises, id: \.self) { exercise in
-                ExerciseRow(exercise: exercise)
+//                ExerciseRow(exercise: exercise)
+                ExerciseView(exercise: exercise)
             }
         }
     }

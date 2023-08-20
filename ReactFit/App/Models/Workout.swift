@@ -2,18 +2,15 @@
 struct Workout: Hashable {
     let name: String
     let difficulty: Difficulty
-    let exercises: [Exercise]
+    let exercises: [WorkoutExercise]
 
-    static let defaultBackWorkout = Workout(name: "Back Day", difficulty: .intermediate, exercises: [
-        Exercise(name: "Lat Pull Down", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps], sets: [Set(repetitions: 15), Set(repetitions: 12), Set(repetitions: 10)]),
-        .wideGripPullUp,
-        .seatedRow,
-        .oneArmDumbbellRow,
-        .straightArmLatPullDown,
-        .invertedRow,
+    static let defaultBackWorkout = Workout(name: "Intermediate Back", difficulty: .intermediate, exercises: [
+        .latPullDown1512108,
+        .wideGripPullUp1512108,
+        .seatedRow1512108,
     ])
 
     static let defaultCoreWorkout = Workout(name: "Core Blast",
                                             difficulty: .intermediate,
-                                            exercises: [.plank])
+                                            exercises: [.plank304560])
 }

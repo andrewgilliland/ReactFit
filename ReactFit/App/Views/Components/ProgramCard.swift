@@ -39,8 +39,8 @@ struct ProgramCard: View {
     }
 }
 
-struct ProgramCard_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgramCard(program: .dbStarterPlan)
-    }
-}
+// struct ProgramCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProgramCard(program: .dbStarterPlan)
+//    }
+// }

@@ -21,7 +21,6 @@
 		148EC90D2A65814E00EE962D /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC90C2A65814E00EE962D /* WorkoutView.swift */; };
 		148EC9112A66B79500EE962D /* ExercisesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9102A66B79500EE962D /* ExercisesTab.swift */; };
 		148EC9132A66B8D800EE962D /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9122A66B8D800EE962D /* TabLayout.swift */; };
-		148EC9152A66DBAD00EE962D /* ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9142A66DBAD00EE962D /* ExerciseRow.swift */; };
 		148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91A2A6812DF00EE962D /* ExerciseModal.swift */; };
 		148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91C2A6822EC00EE962D /* DifficultyRating.swift */; };
 		148EC9262A68624500EE962D /* ExerciseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9252A68624500EE962D /* ExerciseDetails.swift */; };
@@ -40,6 +39,10 @@
 		148ECA312A8FD2DC00EE962D /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA302A8FD2DC00EE962D /* Program.swift */; };
 		148ECA332A90040C00EE962D /* ProgramCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA322A90040C00EE962D /* ProgramCard.swift */; };
 		148ECA352A90056D00EE962D /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA342A90056D00EE962D /* ProgramView.swift */; };
+		148ECA372A919A4400EE962D /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA362A919A4400EE962D /* WorkoutExercise.swift */; };
+		148ECA392A927ADC00EE962D /* WorkoutExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA382A927ADC00EE962D /* WorkoutExerciseRow.swift */; };
+		148ECA3D2A92843600EE962D /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA3C2A92843600EE962D /* ExerciseView.swift */; };
+		148ECA3F2A9287A800EE962D /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA3E2A9287A800EE962D /* Set.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -62,7 +65,6 @@
 		148EC90C2A65814E00EE962D /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		148EC9102A66B79500EE962D /* ExercisesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTab.swift; sourceTree = "<group>"; };
 		148EC9122A66B8D800EE962D /* TabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
-		148EC9142A66DBAD00EE962D /* ExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRow.swift; sourceTree = "<group>"; };
 		148EC91A2A6812DF00EE962D /* ExerciseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModal.swift; sourceTree = "<group>"; };
 		148EC91C2A6822EC00EE962D /* DifficultyRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyRating.swift; sourceTree = "<group>"; };
 		148EC9252A68624500EE962D /* ExerciseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetails.swift; sourceTree = "<group>"; };
@@ -82,6 +84,10 @@
 		148ECA302A8FD2DC00EE962D /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		148ECA322A90040C00EE962D /* ProgramCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCard.swift; sourceTree = "<group>"; };
 		148ECA342A90056D00EE962D /* ProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
+		148ECA362A919A4400EE962D /* WorkoutExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutExercise.swift; sourceTree = "<group>"; };
+		148ECA382A927ADC00EE962D /* WorkoutExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutExerciseRow.swift; sourceTree = "<group>"; };
+		148ECA3C2A92843600EE962D /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		148ECA3E2A9287A800EE962D /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 				148EC9F02A7BE85000EE962D /* Fonts.swift */,
 				148ECA0C2A81CADA00EE962D /* LanguageCodes.swift */,
 				148ECA302A8FD2DC00EE962D /* Program.swift */,
+				148ECA362A919A4400EE962D /* WorkoutExercise.swift */,
+				148ECA3E2A9287A800EE962D /* Set.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,12 +209,13 @@
 				148EC9342A69E0F400EE962D /* PieChart */,
 				148EC9082A65753800EE962D /* WorkoutCard.swift */,
 				148EC90C2A65814E00EE962D /* WorkoutView.swift */,
-				148EC9142A66DBAD00EE962D /* ExerciseRow.swift */,
 				148EC91A2A6812DF00EE962D /* ExerciseModal.swift */,
 				148EC91C2A6822EC00EE962D /* DifficultyRating.swift */,
 				148EC9252A68624500EE962D /* ExerciseDetails.swift */,
 				148ECA322A90040C00EE962D /* ProgramCard.swift */,
 				148ECA342A90056D00EE962D /* ProgramView.swift */,
+				148ECA382A927ADC00EE962D /* WorkoutExerciseRow.swift */,
+				148ECA3C2A92843600EE962D /* ExerciseView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -363,6 +372,8 @@
 				148EC9112A66B79500EE962D /* ExercisesTab.swift in Sources */,
 				148EC8F52A63161800EE962D /* Workout.swift in Sources */,
 				148EC9092A65753800EE962D /* WorkoutCard.swift in Sources */,
+				148ECA3F2A9287A800EE962D /* Set.swift in Sources */,
+				148ECA392A927ADC00EE962D /* WorkoutExerciseRow.swift in Sources */,
 				148ECA162A8CF7E500EE962D /* Color.swift in Sources */,
 				148EC8EF2A63101C00EE962D /* Exercise.swift in Sources */,
 				148EC8F72A63180C00EE962D /* SettingsTab.swift in Sources */,
@@ -370,6 +381,8 @@
 				148EC8F12A63153000EE962D /* Enums.swift in Sources */,
 				148EC9132A66B8D800EE962D /* TabLayout.swift in Sources */,
 				148EC92C2A6965FF00EE962D /* SchemeType.swift in Sources */,
+				148ECA3D2A92843600EE962D /* ExerciseView.swift in Sources */,
+				148ECA372A919A4400EE962D /* WorkoutExercise.swift in Sources */,
 				148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */,
 				148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */,
 				148ECA0B2A81C76C00EE962D /* String.swift in Sources */,
@@ -377,7 +390,6 @@
 				148ECA312A8FD2DC00EE962D /* Program.swift in Sources */,
 				14F0B21F2A6305330019497B /* TabsView.swift in Sources */,
 				148EC90B2A65765600EE962D /* ViewModifiers.swift in Sources */,
-				148EC9152A66DBAD00EE962D /* ExerciseRow.swift in Sources */,
 				148ECA142A8CF62900EE962D /* UIColor.swift in Sources */,
 				148EC90D2A65814E00EE962D /* WorkoutView.swift in Sources */,
 				148ECA2F2A8FD25300EE962D /* ProgramsTab.swift in Sources */,
@@ -534,8 +546,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,9 +555,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgilliland.ReactFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -564,8 +579,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,9 +588,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgilliland.ReactFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
