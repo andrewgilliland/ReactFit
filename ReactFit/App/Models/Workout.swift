@@ -1,8 +1,14 @@
 
-struct Workout: Hashable {
+class Workout {
     let name: String
     let difficulty: Difficulty
     let exercises: [WorkoutExercise]
+
+    init(name: String, difficulty: Difficulty, exercises: [WorkoutExercise]) {
+        self.name = name
+        self.difficulty = difficulty
+        self.exercises = exercises
+    }
 
     static let defaultBackWorkout = Workout(name: "Intermediate Back", difficulty: .intermediate, exercises: [
         .latPullDown1512108,
@@ -14,4 +20,15 @@ struct Workout: Hashable {
     static let defaultCoreWorkout = Workout(name: "Core Blast",
                                             difficulty: .intermediate,
                                             exercises: [.plank304560])
+}
+
+extension Workout: Equatable, Hashable {
+    // Needed to Conform to Equatable
+    static func == (lhs: Workout, rhs: Workout) -> Bool {
+        return lhs.name == rhs.name
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+    }
 }

@@ -6,11 +6,11 @@ struct TabsView: View {
     var body: some View {
         NavigationView {
             TabView {
-                HomeTab(languageCode: $languageCode)
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("Home".localized(languageCode: languageCode))
-                    }
+//                HomeTab(languageCode: $languageCode)
+//                    .tabItem {
+//                        Image(systemName: "house")
+//                        Text("Home".localized(languageCode: languageCode))
+//                    }
                 NavigationView {
                     ProgramsTab()
                 }
@@ -35,11 +35,11 @@ struct TabsView: View {
                     Text("Exercises".localized(languageCode: languageCode))
                 }
 
-                SettingsTab(languageCode: $languageCode)
-                    .tabItem {
-                        Image(systemName: "gearshape")
-                        Text("Settings".localized(languageCode: languageCode))
-                    }
+//                SettingsTab(languageCode: $languageCode)
+//                    .tabItem {
+//                        Image(systemName: "gearshape")
+//                        Text("Settings".localized(languageCode: languageCode))
+//                    }
             }
             .accentColor(.tabIcon)
         }

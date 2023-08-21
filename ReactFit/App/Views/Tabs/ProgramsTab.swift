@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct ProgramsTab: View {
-//    let programs: [Program] = [.dbStarterPlan, .bodybuilderBeginner, .shortcutToSize]
-    let programs: [Program] = []
+    let programs: [Program] = [.dbStarterPlan, .bodybuilderBeginner, .shortcutToSize]
 
     let leadingPadding = 8
 
