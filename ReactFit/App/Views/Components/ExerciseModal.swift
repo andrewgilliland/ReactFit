@@ -21,11 +21,12 @@ struct ExerciseModal: View {
                 }
             }
 
+            .padding()
+
             ExerciseDetails(exercise: exercise)
             Spacer()
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
+        .background(Theme.indigo950)
     }
 }
 

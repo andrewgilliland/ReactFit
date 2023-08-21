@@ -24,6 +24,7 @@ struct ExerciseView: View {
                 Spacer()
 
                 Image(systemName: "ellipsis")
+                    .frame(width: 40, height: 40)
                     .onTapGesture {
                         showModal = true
                     }
@@ -32,6 +33,7 @@ struct ExerciseView: View {
             .foregroundColor(.white.opacity(0.6))
             .sheet(isPresented: $showModal) {
                 ExerciseModal(exercise: exercise)
+                    .presentationDetents([.medium, .large])
             }
         }
     }
