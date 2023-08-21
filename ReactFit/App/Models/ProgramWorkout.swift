@@ -40,5 +40,5 @@ class ProgramWorkout: Workout {
 //        .oneArmDumbbellRow1512108,
 //    ])
 
-    static let BackWorkout = ProgramWorkout(name: "Sweet", difficulty: .intermediate, exercises: [.latPullDown1512108])
+    static let intermediateBack = ProgramWorkout(name: "Intermediate Back", difficulty: .intermediate, exercises: [.latPullDown1512108, .oneArmDumbbellRow1512108, .seatedRow1512108, .wideGripPullUp1512108])
 }
