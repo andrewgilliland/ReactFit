@@ -40,6 +40,11 @@ struct TabsView: View {
 //                        Image(systemName: "gearshape")
 //                        Text("Settings".localized(languageCode: languageCode))
 //                    }
+//                MeasureTab()
+//                    .tabItem {
+//                        Image(systemName: "ruler")
+//                        Text("Measure")
+//                    }
             }
             .accentColor(.tabIcon)
         }

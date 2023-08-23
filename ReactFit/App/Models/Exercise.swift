@@ -1,6 +1,9 @@
 
 // https://www.muscleandstrength.com/exercises
 
+// Backend stuff with MongoDB and Vapor
+// https://github.com/mongodb/mongo-swift-driver/tree/main/Examples/VaporExample
+
 class Exercise {
     let name: String
     let targetMuscleGroup: MuscleGroup
@@ -22,6 +25,29 @@ class Exercise {
         self.secondaryMuscles = secondaryMuscles
     }
 
+    // Quads
+
+    static let barbbellBackSquat = Exercise(name: "BarbellBackSquat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
+
+    static let dumbbellGobletSquat = Exercise(name: "Dumbbell Goblet Squat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.abs, .adductors, .calves, .glutes, .hamstrings, .lowerBack])
+
+    static let legExtension = Exercise(name: "Leg Extension", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
+    static let barbellLunge = Exercise(name: "Barbell Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .hamstrings, .lowerBack])
+
+    static let bodyWeightWalkingLunge = Exercise(name: "Bodyweight Walking Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.calves, .glutes, .hamstrings])
+
+    // Hamstrings
+
+    static let romanianDeadlift = Exercise(name: "Romanian Deadlift", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .hinge, difficulty: .beginner, secondaryMuscles: [.abs, .forearms, .glutes, .lats, .lowerBack, .traps, .upperBack])
+
+    static let legCurls = Exercise(name: "Leg Curl", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+    
+    static let seatedLegCurl = Exercise(name: "Seated Leg Curl", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.glutes])
+    // Calves
+
+    // Back
+
     static let latPullDown = Exercise(name: "Lat Pull Down", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps])
 
     static let wideGripPullUp = Exercise(name: "Wide Grip Pull Up", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps])
@@ -32,9 +58,49 @@ class Exercise {
 
     static let straightArmLatPullDown = Exercise(name: "Straight Arm Lat Pull Down", targetMuscleGroup: .lats, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.biceps])
 
+    static let invertedRow = Exercise(name: "Inverted Row", targetMuscleGroup: .upperBack, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.lats, .biceps])
+
+    // Chest
+
     static let dumbbellBenchPress = Exercise(name: "Dumbbell Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
 
-    static let invertedRow = Exercise(name: "Inverted Row", targetMuscleGroup: .upperBack, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.lats, .biceps])
+    static let barbellBenchPress = Exercise(name: "Barbell Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.shoulders, .triceps])
+
+    static let dumbbellFlys = Exercise(name: "Dumbbell Flys", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
+
+    static let inclineBenchPress = Exercise(name: "Incline Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
+
+    static let inclineDumbbellBenchPress = Exercise(name: "Incline Dumbbell Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
+
+    static let standingCableFly = Exercise(name: "Standing Cable Fly", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .cables, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps])
+
+    // Shoulders
+
+    static let militaryPress = Exercise(name: "Military Press", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.abs, .traps, .triceps])
+
+    static let seatedDumbbellPress = Exercise(name: "Seated Dumbbell Press", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.traps, .triceps])
+
+    static let dumbbellLateralRaise = Exercise(name: "Dumbbell Lateral Raise", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    static let cableFacePull = Exercise(name: "Cable Face Pull", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .cables, mechanics: .compound, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.traps, .upperBack])
+
+    static let bentOverDumbbellRearDeltRaise = Exercise(name: "Bent Over Dumbbell Rear Delt Raise", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.traps, .triceps])
+
+    static let weightPlateFrontRaise = Exercise(name: "Weight Plate Front Raise", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .other, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    // Biceps
+
+    static let standingBarbellCurl = Exercise(name: "Standing Barbell Curl", targetMuscleGroup: .biceps, exerciseType: .strength, equipment: .barbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    static let cableCurl = Exercise(name: "Cable Curl", targetMuscleGroup: .biceps, exerciseType: .strength, equipment: .cables, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    static let inclineDumbbellCurl = Exercise(name: "Incline Dumbbell Curl", targetMuscleGroup: .biceps, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.forearms])
+
+    static let dumbbellHammerPreacherCurl = Exercise(name: "Dumbbell Preacher Curl", targetMuscleGroup: .biceps, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.forearms])
+
+    // Triceps
+
+    // Core
 }
 
 extension Exercise: Equatable, Hashable {

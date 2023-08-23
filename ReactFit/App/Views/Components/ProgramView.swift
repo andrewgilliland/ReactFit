@@ -4,7 +4,7 @@ struct ProgramView: View {
     let program: Program
 
     var body: some View {
-        TabLayout(title: program.name) {
+        TabLayout(title: program.title) {
             ForEach(program.weeks, id: \.self) { week in
                 ProgramWeekView(week: week, index: program.weeks.firstIndex(of: week)! + 1)
             }

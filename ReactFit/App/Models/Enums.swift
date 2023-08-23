@@ -8,6 +8,7 @@ enum MuscleGroup: String, Hashable {
     case quads = "Quads"
     case hamstrings = "Hamstrings"
     case hipFlexors = "Hip Flexors"
+    case adductors = "Adductors"
     case calves = "Calves"
     case abs = "Abs"
     case biceps = "Biceps"
@@ -42,6 +43,7 @@ enum Equipment: String {
     case trx
     case kettleBells
     case foamRoller
+    case other
 }
 
 enum Mechanics: String {
@@ -55,6 +57,7 @@ enum ForceType: String {
     case `static`
     case compression
     case dynamicStretching
+    case hinge
 }
 
 enum Difficulty: String {

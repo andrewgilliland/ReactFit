@@ -6,9 +6,26 @@ struct ProgramCard: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(program.name)
+                Text(program.title)
                     .modifier(SecondaryHeading())
                     .padding(.bottom, 1)
+                Spacer()
+            }
+            .padding(.leading, 8)
+
+            HStack {
+                Text("\(program.description)")
+                    .modifier(SecondaryCopy())
+                    .padding(.bottom, 2)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            .padding(.leading, 8)
+
+            HStack {
+                Text("Workouts per Week: \(program.workoutsPerWeek)")
+                    .modifier(SecondaryCopy())
+                    .padding(.bottom, 2)
                 Spacer()
             }
             .padding(.leading, 8)
@@ -32,15 +49,14 @@ struct ProgramCard: View {
             Spacer()
         }
         .frame(maxWidth: .infinity)
-//                .frame(height: 100)
         .padding(8)
         .background(program.color.opacity(0.3))
         .cornerRadius(4)
     }
 }
 
-// struct ProgramCard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ProgramCard(program: .dbStarterPlan)
-//    }
-// }
+struct ProgramCard_Previews: PreviewProvider {
+    static var previews: some View {
+        ProgramCard(program: .dbStarterPlan)
+    }
+}
