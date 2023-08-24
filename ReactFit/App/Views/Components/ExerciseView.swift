@@ -16,6 +16,7 @@ struct ExerciseView: View {
                         .font(.custom(Fonts.sourceCodePro, size: 16))
                         .fontWeight(.semibold)
                         .foregroundColor(.cardHeading)
+                        .lineLimit(1)
                     Text(exercise.targetMuscleGroup.rawValue)
                         .font(.custom(Fonts.sourceCodePro, size: 14))
                         .foregroundColor(.cardCopy)

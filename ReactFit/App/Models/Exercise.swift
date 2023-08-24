@@ -1,10 +1,11 @@
-
+import Foundation
 // https://www.muscleandstrength.com/exercises
 
 // Backend stuff with MongoDB and Vapor
 // https://github.com/mongodb/mongo-swift-driver/tree/main/Examples/VaporExample
 
-class Exercise {
+class Exercise: Identifiable {
+    let id = UUID()
     let name: String
     let targetMuscleGroup: MuscleGroup
     let exerciseType: ExerciseType
@@ -35,16 +36,23 @@ class Exercise {
 
     static let barbellLunge = Exercise(name: "Barbell Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .hamstrings, .lowerBack])
 
-    static let bodyWeightWalkingLunge = Exercise(name: "Bodyweight Walking Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.calves, .glutes, .hamstrings])
+    static let bodyweightWalkingLunge = Exercise(name: "Bodyweight Walking Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.calves, .glutes, .hamstrings])
 
     // Hamstrings
 
     static let romanianDeadlift = Exercise(name: "Romanian Deadlift", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .hinge, difficulty: .beginner, secondaryMuscles: [.abs, .forearms, .glutes, .lats, .lowerBack, .traps, .upperBack])
 
     static let legCurls = Exercise(name: "Leg Curl", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
-    
+
     static let seatedLegCurl = Exercise(name: "Seated Leg Curl", targetMuscleGroup: .hamstrings, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [.glutes])
+
     // Calves
+
+    static let standingCalfRaise = Exercise(name: "Standing Machine Calf Raise", targetMuscleGroup: .calves, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
+    static let bodyweightStandingCalfRaise = Exercise(name: "Bodyweight Calf Raise", targetMuscleGroup: .calves, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
+    static let seatedCalfRaise = Exercise(name: "Seated Calf Raise", targetMuscleGroup: .calves, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
 
     // Back
 
@@ -100,7 +108,23 @@ class Exercise {
 
     // Triceps
 
+    static let ropeTricepsExtension = Exercise(name: "Rope Triceps Extension", targetMuscleGroup: .triceps, exerciseType: .strength, equipment: .cables, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
+    static let tricepsDip = Exercise(name: "Tricep Dip", targetMuscleGroup: .triceps, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.chest, .shoulders])
+
+    static let seatedOverheadDumbbellTricepExtension = Exercise(name: "Seated Overhead Tricep Dumbbell Extension", targetMuscleGroup: .triceps, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
+    static let ezBarSkullcrusher = Exercise(name: "EZ Bar Skullcrusher", targetMuscleGroup: .triceps, exerciseType: .strength, equipment: .ezBar, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
+
     // Core
+
+    static let planks = Exercise(name: "Planks", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .static, difficulty: .beginner, secondaryMuscles: [.lowerBack])
+
+    static let lyingLegRaise = Exercise(name: "Lying Leg Raise", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    static let flutterKick = Exercise(name: "Flutter Kick", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
+
+    static let mountainClimber = Exercise(name: "Mountain Climber", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .isometric, difficulty: .intermediate, secondaryMuscles: [])
 }
 
 extension Exercise: Equatable, Hashable {

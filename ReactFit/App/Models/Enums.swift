@@ -1,10 +1,10 @@
 
-enum MuscleGroup: String, Hashable {
+enum MuscleGroup: String, Hashable, CaseIterable, Identifiable {
     case lats = "Lats"
     case chest = "Chest"
     case shoulders = "Shoulders"
     case traps = "Traps"
-    case glutes = "Glutess"
+    case glutes = "Glutes"
     case quads = "Quads"
     case hamstrings = "Hamstrings"
     case hipFlexors = "Hip Flexors"
@@ -24,6 +24,8 @@ enum MuscleGroup: String, Hashable {
             fatalError("Invalid raw value: \(value)")
         }
     }
+
+    var id: String { rawValue }
 }
 
 enum ExerciseType: String {
@@ -40,6 +42,7 @@ enum Equipment: String {
     case cables
     case barbell
     case machine
+    case ezBar
     case trx
     case kettleBells
     case foamRoller
@@ -58,6 +61,7 @@ enum ForceType: String {
     case compression
     case dynamicStretching
     case hinge
+    case isometric
 }
 
 enum Difficulty: String {
