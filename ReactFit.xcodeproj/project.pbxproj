@@ -48,6 +48,7 @@
 		148ECA612A94D97100EE962D /* MeasureTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA602A94D97100EE962D /* MeasureTab.swift */; };
 		148ECA642A94DB2000EE962D /* ARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA632A94DB2000EE962D /* ARViewRepresentable.swift */; };
 		148ECA662A94F14B00EE962D /* ARViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ECA652A94F14B00EE962D /* ARViewCoordinator.swift */; };
+		14AD76152A9B6C4C004BFCCA /* ExerciseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD76142A9B6C4C004BFCCA /* ExerciseScreen.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -98,6 +99,7 @@
 		148ECA602A94D97100EE962D /* MeasureTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureTab.swift; sourceTree = "<group>"; };
 		148ECA632A94DB2000EE962D /* ARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewRepresentable.swift; sourceTree = "<group>"; };
 		148ECA652A94F14B00EE962D /* ARViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewCoordinator.swift; sourceTree = "<group>"; };
+		14AD76142A9B6C4C004BFCCA /* ExerciseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseScreen.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				148ECA382A927ADC00EE962D /* WorkoutExerciseCard.swift */,
 				148ECA3C2A92843600EE962D /* ExerciseView.swift */,
 				148ECA422A939C6500EE962D /* ProgramWeekView.swift */,
+				14AD76142A9B6C4C004BFCCA /* ExerciseScreen.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				148ECA372A919A4400EE962D /* WorkoutExercise.swift in Sources */,
 				148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */,
 				148ECA412A92DA9B00EE962D /* ProgramWorkout.swift in Sources */,
+				14AD76152A9B6C4C004BFCCA /* ExerciseScreen.swift in Sources */,
 				148EC9F12A7BE85000EE962D /* Fonts.swift in Sources */,
 				148ECA0B2A81C76C00EE962D /* String.swift in Sources */,
 				148EC9282A68C80D00EE962D /* Theme.swift in Sources */,

@@ -60,7 +60,7 @@ struct ExercisesTab: View {
         TabLayout(title: "Exercises".localized(languageCode: languageCode)) {
             LazyVGrid(columns: createGridItems(), spacing: 8) {
                 ForEach(MuscleGroup.allCases) { muscleGroup in
-                    NavigationLink(destination: Text(muscleGroup.rawValue)) {
+                    NavigationLink(destination: ExerciseScreen(muscleGroup: muscleGroup, exercises: exercisesByMuscleGroup[muscleGroup] ?? [])) {
                         VStack {
                             HStack {
                                 Text(muscleGroup.rawValue)
