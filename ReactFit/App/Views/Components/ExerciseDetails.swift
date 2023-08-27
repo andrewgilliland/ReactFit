@@ -1,5 +1,6 @@
 import SwiftUI
 
+// ExerciseModalDetails
 struct ExerciseDetails: View {
     let exercise: Exercise
 

@@ -40,7 +40,7 @@ struct WorkoutExerciseCard: View {
             .padding(.horizontal, 20)
             .foregroundColor(.white.opacity(0.6))
             .sheet(isPresented: $showModal) {
-//                ExerciseModal(exercise: exercise)
+                ExerciseModal(exercise: exercise)
             }
 
             ForEach(exercise.sets.indices, id: \.self) { index in
