@@ -34,7 +34,6 @@ struct ExerciseView: View {
             .foregroundColor(.white.opacity(0.6))
             .sheet(isPresented: $showModal) {
                 ExerciseModal(exercise: exercise)
-                    .presentationDetents([.medium, .large])
             }
         }
     }

@@ -10,13 +10,13 @@ struct PrimaryHeading: ViewModifier {
 struct SecondaryHeading: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom(Fonts.sourceCodePro, size: 16)).foregroundColor(.white).fontWeight(.semibold)
+            .font(.custom(Fonts.sourceCodePro, size: 18)).foregroundColor(.white).fontWeight(.semibold)
     }
 }
 
 struct SecondaryCopy: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(Theme.gray400).fontWeight(.semibold)
+            .font(.custom(Fonts.sourceCodePro, size: 16)).foregroundColor(Theme.gray400).fontWeight(.semibold)
     }
 }

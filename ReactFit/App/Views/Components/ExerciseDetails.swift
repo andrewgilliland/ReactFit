@@ -2,60 +2,115 @@ import SwiftUI
 
 // ExerciseModalDetails
 struct ExerciseDetails: View {
-    let exercise: Exercise
+    let name: String
+    let targetMuscleGroup: MuscleGroup
+    let secondaryMuscles: [MuscleGroup]
+    let difficulty: Difficulty
+    let exerciseType: ExerciseType
+    let equipment: Equipment
+    let mechanics: Mechanics
+    let forceType: ForceType
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             HStack {
-                Text("Target Muscle Group:")
+                Text(name)
+                    .modifier(PrimaryHeading())
+
                 Spacer()
-                Text(exercise.targetMuscleGroup.rawValue)
             }
 
-            HStack {
-                Text("Secondary Muscle Groups:")
-                Spacer()
-                ForEach(Array(exercise.secondaryMuscles), id: \.self) { secondaryMuscle in
-                    Text(secondaryMuscle.rawValue)
+            .padding()
+
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Target Muscle Group:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(targetMuscleGroup.rawValue)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
                 }
-            }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
 
-            HStack {
-                Text("Difficulty:")
-                Spacer()
-                Text(exercise.difficulty.rawValue)
-            }
+                HStack(alignment: .top) {
+                    Text("Secondary Muscle Groups:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        ForEach(Array(secondaryMuscles), id: \.self) { secondaryMuscle in
+                            Text(secondaryMuscle.rawValue)
+                                .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                        }
+                    }
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
 
-            HStack {
-                Text("Exercise Type:")
-                Spacer()
-                Text(exercise.exerciseType.rawValue)
-            }
+                HStack {
+                    Text("Difficulty:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(difficulty.rawValue.capitalized)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
 
-            HStack {
-                Text("Equipment:")
-                Spacer()
-                Text(exercise.equipment.rawValue)
-            }
+                HStack {
+                    Text("Exercise Type:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(exerciseType.rawValue.capitalized)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
 
-            HStack {
-                Text("Mechanics:")
-                Spacer()
-                Text(exercise.mechanics.rawValue)
-            }
+                HStack {
+                    Text("Equipment:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(equipment.rawValue.capitalized)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
 
-            HStack {
-                Text("Force Type:")
-                Spacer()
-                Text(exercise.forceType.rawValue)
+                HStack {
+                    Text("Mechanics:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(mechanics.rawValue.capitalized)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
+
+                HStack {
+                    Text("Force Type:")
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                    Spacer()
+                    Text(forceType.rawValue.capitalized)
+                        .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+                }
+                .padding()
+                .background(Theme.indigo800)
+                .cornerRadius(8)
             }
+            .padding(.horizontal, 18)
         }
-        .padding(.horizontal, 18)
     }
 }
 
-struct ExerciseDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseDetails(exercise: .latPullDown)
-    }
-}
+// struct ExerciseDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExerciseDetails(exercise: .latPullDown)
+//    }
+// }
