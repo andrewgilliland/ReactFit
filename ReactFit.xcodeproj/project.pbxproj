@@ -23,7 +23,7 @@
 		148EC9132A66B8D800EE962D /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9122A66B8D800EE962D /* TabLayout.swift */; };
 		148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91A2A6812DF00EE962D /* ExerciseModal.swift */; };
 		148EC91D2A6822EC00EE962D /* DifficultyRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC91C2A6822EC00EE962D /* DifficultyRating.swift */; };
-		148EC9262A68624500EE962D /* ExerciseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9252A68624500EE962D /* ExerciseDetails.swift */; };
+		148EC9262A68624500EE962D /* ExerciseModalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9252A68624500EE962D /* ExerciseModalDetails.swift */; };
 		148EC9282A68C80D00EE962D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9272A68C80D00EE962D /* Theme.swift */; };
 		148EC92A2A69615D00EE962D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC9292A69615D00EE962D /* Assets.swift */; };
 		148EC92C2A6965FF00EE962D /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EC92B2A6965FF00EE962D /* SchemeType.swift */; };
@@ -74,7 +74,7 @@
 		148EC9122A66B8D800EE962D /* TabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
 		148EC91A2A6812DF00EE962D /* ExerciseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModal.swift; sourceTree = "<group>"; };
 		148EC91C2A6822EC00EE962D /* DifficultyRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyRating.swift; sourceTree = "<group>"; };
-		148EC9252A68624500EE962D /* ExerciseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetails.swift; sourceTree = "<group>"; };
+		148EC9252A68624500EE962D /* ExerciseModalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModalDetails.swift; sourceTree = "<group>"; };
 		148EC9272A68C80D00EE962D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		148EC9292A69615D00EE962D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		148EC92B2A6965FF00EE962D /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 				148EC90C2A65814E00EE962D /* WorkoutView.swift */,
 				148EC91A2A6812DF00EE962D /* ExerciseModal.swift */,
 				148EC91C2A6822EC00EE962D /* DifficultyRating.swift */,
-				148EC9252A68624500EE962D /* ExerciseDetails.swift */,
+				148EC9252A68624500EE962D /* ExerciseModalDetails.swift */,
 				148ECA322A90040C00EE962D /* ProgramCard.swift */,
 				148ECA342A90056D00EE962D /* ProgramView.swift */,
 				148ECA382A927ADC00EE962D /* WorkoutExerciseCard.swift */,
@@ -392,7 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				148ECA332A90040C00EE962D /* ProgramCard.swift in Sources */,
-				148EC9262A68624500EE962D /* ExerciseDetails.swift in Sources */,
+				148EC9262A68624500EE962D /* ExerciseModalDetails.swift in Sources */,
 				148EC8EC2A630F1F00EE962D /* HomeTab.swift in Sources */,
 				148EC8F32A63158300EE962D /* WorkoutsTab.swift in Sources */,
 				148EC91B2A6812DF00EE962D /* ExerciseModal.swift in Sources */,

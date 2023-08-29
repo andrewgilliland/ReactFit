@@ -20,3 +20,19 @@ struct SecondaryCopy: ViewModifier {
             .font(.custom(Fonts.sourceCodePro, size: 16)).foregroundColor(Theme.gray400).fontWeight(.semibold)
     }
 }
+
+struct TertiaryCopy: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom(Fonts.sourceCodePro, size: 14)).foregroundColor(.white).fontWeight(.semibold)
+    }
+}
+
+struct ExerciseDetailModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(Theme.indigo800)
+            .cornerRadius(8)
+    }
+}
