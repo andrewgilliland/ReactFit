@@ -4,6 +4,12 @@ class Workout {
     let difficulty: Difficulty
     let exercises: [WorkoutExercise]
 
+    var totalSets: Int {
+        exercises.reduce(0) { partialSum, exercise in
+            partialSum + exercise.sets.count
+        }
+    }
+
     init(name: String, difficulty: Difficulty, exercises: [WorkoutExercise]) {
         self.name = name
         self.difficulty = difficulty

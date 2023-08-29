@@ -8,21 +8,36 @@ struct WorkoutCard: View {
             HStack {
                 Text(workout.name)
                     .modifier(SecondaryHeading())
-                    .padding(.bottom, 2)
+                    .padding(.bottom, 1)
                 Spacer()
             }
             .padding(.leading, 8)
 
             HStack {
-                DifficultyRating(difficulty: workout.difficulty, color: Theme.indigo700)
+                Text("Exercises: \(workout.exercises.count)")
+                    .modifier(SecondaryCopy())
+                    .padding(.bottom, 2)
+            }
+            .padding(.leading, 8)
+
+            HStack {
+                Text("Total Sets: \(workout.totalSets)")
+                    .modifier(SecondaryCopy())
+                    .padding(.bottom, 2)
+            }
+            .padding(.leading, 8)
+
+            HStack {
+                Text("Difficulty:")
+                    .modifier(SecondaryCopy())
+                    .padding(.bottom, 2)
+                DifficultyRating(difficulty: workout.difficulty, color: Theme.emerald500)
                 Spacer()
             }
             .padding(.leading, 8)
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: 60)
         .padding(8)
-        .background(.indigo.opacity(0.3))
+        .background(Theme.indigo500.opacity(0.3))
         .cornerRadius(4)
     }
 }

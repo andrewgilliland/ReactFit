@@ -5,7 +5,7 @@ struct WorkoutsTab: View {
 
     var body: some View {
         TabLayout(title: "Workouts") {
-            LazyVGrid(columns: createGridItems(), spacing: 8) {
+            VStack {
                 ForEach(workouts, id: \.self) { workout in
                     NavigationLink(destination: WorkoutView(workout: workout)) {
                         WorkoutCard(workout: workout)
@@ -14,10 +14,6 @@ struct WorkoutsTab: View {
             }
             .padding()
         }
-    }
-
-    private func createGridItems() -> [GridItem] {
-        [GridItem(.flexible()), GridItem(.flexible())]
     }
 }
 
