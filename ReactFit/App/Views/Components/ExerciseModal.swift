@@ -14,7 +14,7 @@ struct ExerciseModal<T>: View where T: ExerciseOption {
                 Spacer()
             }
         }
-        .background(Theme.indigo950)
+        .background(LinearGradient(gradient: Gradient(colors: [Theme.indigo950, .black]), startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
