@@ -58,21 +58,21 @@ public class LinkedList<T> {
     public func remove(node: Node<T>) -> T {
         let prev = node.previous
         let next = node.next
-        
+
         if let prev = prev {
             prev.next = next
         } else {
             head = next
         }
         next?.previous = prev
-        
+
         if next == nil {
             tail = prev
         }
-        
+
         node.previous = nil
         node.next = nil
-        
+
         return node.value
     }
 

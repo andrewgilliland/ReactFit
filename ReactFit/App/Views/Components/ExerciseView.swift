@@ -8,7 +8,9 @@ struct ExerciseView: View {
         VStack {
             HStack {
                 RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.indigo)
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [Theme.indigo500, Theme.indigo900]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    )
                     .frame(width: 40, height: 40)
 
                 VStack(alignment: .leading) {
@@ -27,6 +29,7 @@ struct ExerciseView: View {
                 Image(systemName: "ellipsis")
                     .frame(width: 40, height: 40)
                     .onTapGesture {
+                        simpleHaptics()
                         showModal = true
                     }
             }

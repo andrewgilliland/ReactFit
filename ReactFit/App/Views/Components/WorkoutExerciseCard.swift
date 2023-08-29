@@ -10,7 +10,7 @@ struct WorkoutExerciseCard: View {
             HStack {
                 ZStack {
                     Rectangle()
-                        .fill(Theme.indigo600)
+                        .fill(LinearGradient(gradient: Gradient(colors: [Theme.indigo500, Theme.indigo900]), startPoint: .topLeading, endPoint: .bottomTrailing))
                         .cornerRadius(4)
                         .frame(width: 40, height: 40)
 
@@ -32,7 +32,9 @@ struct WorkoutExerciseCard: View {
                 Spacer()
 
                 Image(systemName: "ellipsis")
+                    .frame(width: 40, height: 40)
                     .onTapGesture {
+                        simpleHaptics()
                         showModal = true
                     }
             }
