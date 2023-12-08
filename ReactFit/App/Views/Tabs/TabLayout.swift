@@ -6,8 +6,7 @@ struct TabLayout<Content: View>: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient:
-                Gradient(colors: [.mainGradientTop, .mainGradientBottom]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            Color.black
                 .ignoresSafeArea()
 
             ScrollView(.vertical) {

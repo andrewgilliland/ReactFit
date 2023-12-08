@@ -64,6 +64,21 @@
                   endingLineNumber = "18"
                   offsetFromSymbolStart = "172">
                </Location>
+               <Location
+                  uuid = "21C22668-5EDB-4A0E-B1AE-54C27EBD54EF - 9d9846e93aaae014"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ReactFit.WorkoutView_Previews.previews.getter : some"
+                  moduleName = "ReactFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrew.gilliland/Code/Swift/ReactFit/ReactFit/App/Views/Components/WorkoutView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "164">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

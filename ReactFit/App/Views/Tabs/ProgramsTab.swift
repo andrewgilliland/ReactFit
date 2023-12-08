@@ -10,6 +10,7 @@ struct ProgramsTab: View {
             ForEach(programs, id: \.self) { program in
                 NavigationLink(destination: ProgramView(program: program)) {
                     ProgramCard(program: program)
+                        .padding(.bottom, 12)
                 }
             }
             .padding(.horizontal)

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ExerciseModal<T>: View where T: ExerciseOption {
     let exercise: T
-    @Environment(\.presentationMode) var presentationMode
+//    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack(alignment: .leading) {

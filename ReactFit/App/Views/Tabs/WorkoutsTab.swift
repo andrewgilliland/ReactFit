@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WorkoutsTab: View {
-    let workouts: [Workout] = [.defaultBackWorkout, .defaultCoreWorkout]
+    let workouts: [Workout] = [.pushLevelOne, .defaultBackWorkout, .defaultCoreWorkout]
 
     var body: some View {
         TabLayout(title: "Workouts") {

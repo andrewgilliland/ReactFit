@@ -26,6 +26,14 @@ class Workout {
     static let defaultCoreWorkout = Workout(name: "Core Blast",
                                             difficulty: .intermediate,
                                             exercises: [.plank304560])
+
+    static let pushLevelOne = Workout(name: "Push Level 1", difficulty: .beginner, exercises: [
+        WorkoutExercise(name: "Dumbbell Bench Press", targetMuscleGroup: .chest, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.shoulders, .triceps], sets: [Set(repetitions: 15), Set(repetitions: 12), Set(repetitions: 10)]),
+        WorkoutExercise(name: "Dumbbell Lateral Raise", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .dumbbell, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [], sets: [Set(repetitions: 15), Set(repetitions: 12), Set(repetitions: 10)]),
+        WorkoutExercise(name: "Seated Dumbbell Press", targetMuscleGroup: .shoulders, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.traps, .triceps], sets: [Set(repetitions: 15), Set(repetitions: 12), Set(repetitions: 10)]),
+        WorkoutExercise(name: "Rope Triceps Extension", targetMuscleGroup: .triceps, exerciseType: .strength, equipment: .cables, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [], sets: [Set(repetitions: 15), Set(repetitions: 12), Set(repetitions: 10)]),
+
+    ])
 }
 
 extension Workout: Equatable, Hashable {
