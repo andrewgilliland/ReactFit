@@ -2,35 +2,34 @@ import SwiftUI
 
 struct DifficultyRating: View {
     let difficulty: Difficulty
-    let color: Color
 
     var body: some View {
         switch difficulty {
         case .beginner: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
             }
 
         case .intermediate: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
             }
 
         case .advanced: HStack {
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
                 Image(systemName: "star.fill")
-                    .foregroundColor(color)
+                    .foregroundColor(.black)
             }
         }
     }
@@ -38,6 +37,6 @@ struct DifficultyRating: View {
 
 struct DifficultyRating_Previews: PreviewProvider {
     static var previews: some View {
-        DifficultyRating(difficulty: .intermediate, color: .indigo)
+        DifficultyRating(difficulty: .intermediate)
     }
 }

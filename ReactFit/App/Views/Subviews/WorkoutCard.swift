@@ -31,7 +31,7 @@ struct WorkoutCard: View {
                 Text("Difficulty:")
                     .modifier(SecondaryCopy())
                     .padding(.bottom, 2)
-                DifficultyRating(difficulty: workout.difficulty, color: Theme.emerald500)
+                DifficultyRating(difficulty: workout.difficulty)
                 Spacer()
             }
             .padding(.leading, 8)

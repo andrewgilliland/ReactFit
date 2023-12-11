@@ -22,7 +22,7 @@ struct ProgramCard: View {
                         }
                         .rotationEffect(.degrees(cardOpen ? 180 : 0))
                         .font(.system(size: 24))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding()
                 }
                 .padding(.leading, 8)
@@ -57,7 +57,7 @@ struct ProgramCard: View {
                         HStack {
                             Text("Difficulty:")
                                 .modifier(SecondaryCopy())
-                            DifficultyRating(difficulty: program.difficulty, color: program.color)
+                            DifficultyRating(difficulty: program.difficulty)
                             Spacer()
                         }
                         .padding(.leading, 8)
