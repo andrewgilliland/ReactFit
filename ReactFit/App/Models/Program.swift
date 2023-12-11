@@ -16,14 +16,14 @@ struct Program: Hashable {
         return weeks[0].workouts.count
     }
 
-    static let dbStarterPlan = Program(title: "Beginner Bodybuilding", description: "This is a cool workout program. Get your foot in the door with this workout program.", difficulty: .beginner, color: Theme.indigo500,
+    static let dbStarterPlan = Program(title: "Beginner Bodybuilding", description: "This is a cool workout program. Get your foot in the door with this workout program.", difficulty: .beginner, color: Theme.cyan400,
                                        weeks:
                                        [Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack]),
                                         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack]),
                                         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack]),
                                         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack])])
 
-    static let bodybuilderBeginner = Program(title: "Intermediate Bodybuilder", description: "Get swole in no time.", difficulty: .intermediate, color: Theme.emerald500, weeks: [
+    static let bodybuilderBeginner = Program(title: "Intermediate Bodybuilder", description: "Get swole in no time.", difficulty: .intermediate, color: Theme.emerald400, weeks: [
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
@@ -38,7 +38,7 @@ struct Program: Hashable {
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
     ])
 
-    static let shortcutToSize = Program(title: "Advanced Bodybuilder", description: "Get swoler in no time.", difficulty: .advanced, color: Theme.yellow500, weeks: [
+    static let shortcutToSize = Program(title: "Advanced Bodybuilder", description: "Get swoler in no time.", difficulty: .advanced, color: Theme.yellow400, weeks: [
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),
         Week(workouts: [.intermediateBack, .intermediateBack, .intermediateBack, .intermediateBack]),

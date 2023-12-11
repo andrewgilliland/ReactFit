@@ -7,13 +7,15 @@ struct ProgramsTab: View {
 
     var body: some View {
         TabLayout(title: "Programs") {
-            ForEach(programs, id: \.self) { program in
-                NavigationLink(destination: ProgramView(program: program)) {
-                    ProgramCard(program: program)
-                        .padding(.bottom, 12)
+            VStack {
+                ForEach(programs, id: \.self) { program in
+                    NavigationLink(destination: ProgramView(program: program)) {
+                        ProgramCard(program: program)
+                            .padding(.bottom, 12)
+                    }
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
         }
     }
 
