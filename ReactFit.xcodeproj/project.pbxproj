@@ -57,7 +57,6 @@
 		14AD76152A9B6C4C004BFCCA /* ExerciseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD76142A9B6C4C004BFCCA /* ExerciseScreen.swift */; };
 		14AD76172A9E167A004BFCCA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD76162A9E167A004BFCCA /* LinkedList.swift */; };
 		14D84CCB2BA36A9E00AF6294 /* ReactFitApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CCA2BA36A9E00AF6294 /* ReactFitApi.swift */; };
-		14D84CCD2BA36D9300AF6294 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CCC2BA36D9300AF6294 /* URLSession.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -115,7 +114,6 @@
 		14AD76142A9B6C4C004BFCCA /* ExerciseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseScreen.swift; sourceTree = "<group>"; };
 		14AD76162A9E167A004BFCCA /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		14D84CCA2BA36A9E00AF6294 /* ReactFitApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApi.swift; sourceTree = "<group>"; };
-		14D84CCC2BA36D9300AF6294 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 				148ECA0A2A81C76C00EE962D /* String.swift */,
 				148ECA132A8CF62900EE962D /* UIColor.swift */,
 				148ECA152A8CF7E500EE962D /* Color.swift */,
-				14D84CCC2BA36D9300AF6294 /* URLSession.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,7 +430,6 @@
 				148EC9112A66B79500EE962D /* ExercisesTab.swift in Sources */,
 				148EC8F52A63161800EE962D /* Workout.swift in Sources */,
 				148EC9092A65753800EE962D /* WorkoutCard.swift in Sources */,
-				14D84CCD2BA36D9300AF6294 /* URLSession.swift in Sources */,
 				148ECA3F2A9287A800EE962D /* Set.swift in Sources */,
 				148ECA392A927ADC00EE962D /* WorkoutExerciseCard.swift in Sources */,
 				148ECA162A8CF7E500EE962D /* Color.swift in Sources */,

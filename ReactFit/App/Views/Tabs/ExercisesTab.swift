@@ -3,9 +3,8 @@ import SwiftUI
 struct ExercisesTab: View {
     @Binding var languageCode: LanguageCode
     @State private var showModal = false
-    
-    // make api call to get all exercises from FastifyApi
-    
+    private let reactFitApi = ReactFitApi()
+    @State private var todos: [ToDo] = []
 
     let exercises: [Exercise] = [
         .barbbellBackSquat,
@@ -61,27 +60,34 @@ struct ExercisesTab: View {
 
     var body: some View {
         TabLayout(title: "Exercises".localized(languageCode: languageCode)) {
-            LazyVGrid(columns: createGridItems(), spacing: 8) {
-                ForEach(MuscleGroup.allCases) { muscleGroup in
-                    NavigationLink(destination: ExerciseScreen(muscleGroup: muscleGroup, exercises: exercisesByMuscleGroup[muscleGroup] ?? [])) {
-                        VStack {
-                            HStack {
-                                Text(muscleGroup.rawValue)
-                                    .modifier(SecondaryHeading())
-                                    .padding(.bottom, 2)
-                                Spacer()
+            VStack {
+                LazyVGrid(columns: createGridItems(), spacing: 8) {
+                    ForEach(MuscleGroup.allCases) { muscleGroup in
+                        NavigationLink(destination: ExerciseScreen(muscleGroup: muscleGroup, exercises: exercisesByMuscleGroup[muscleGroup] ?? [])) {
+                            VStack {
+                                HStack {
+                                    Text(muscleGroup.rawValue)
+                                        .modifier(SecondaryHeading())
+                                        .padding(.bottom, 2)
+                                    Spacer()
+                                }
+                                .padding(.leading, 8)
                             }
-                            .padding(.leading, 8)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 60)
+                            .padding(8)
+                            .background(.indigo.opacity(0.3))
+                            .cornerRadius(4)
                         }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 60)
-                        .padding(8)
-                        .background(.indigo.opacity(0.3))
-                        .cornerRadius(4)
                     }
                 }
+                .padding()
+                ForEach(todos) { todo in
+                    Text(todo.title)
+                }
             }
-            .padding()
+        }.task {
+//            todos = await reactFitApi.getTodo()
         }
     }
 
