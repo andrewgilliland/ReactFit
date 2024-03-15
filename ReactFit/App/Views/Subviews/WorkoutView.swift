@@ -7,6 +7,7 @@ struct WorkoutView: View {
         TabLayout(title: workout.name) {
             ForEach(workout.exercises, id: \.self) { exercise in
                 WorkoutExerciseCard(exercise: exercise, index: workout.exercises.firstIndex(of: exercise)! + 1)
+                    .padding(.horizontal)
             }
         }
     }

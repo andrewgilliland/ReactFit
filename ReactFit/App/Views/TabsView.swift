@@ -1,6 +1,8 @@
+import RealmSwift
 import SwiftUI
 
 struct TabsView: View {
+    @ObservedObject var app: RealmSwift.App
     @State private var languageCode = LanguageCode.english
 
     var body: some View {
@@ -47,21 +49,6 @@ struct TabsView: View {
 //                    }
             }
             .accentColor(.tabIcon)
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            TabsView()
-                .previewDisplayName("Light Mode")
-                .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
-
-            TabsView()
-                .previewDisplayName("Dark Mode")
-                .preferredColorScheme(.dark)
-                .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
         }
     }
 }

@@ -3,6 +3,9 @@ import SwiftUI
 struct ExercisesTab: View {
     @Binding var languageCode: LanguageCode
     @State private var showModal = false
+    
+    // make api call to get all exercises from FastifyApi
+    
 
     let exercises: [Exercise] = [
         .barbbellBackSquat,

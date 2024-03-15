@@ -28,13 +28,13 @@ class Exercise: Identifiable {
 
     // Quads
 
-    static let barbbellBackSquat = Exercise(name: "BarbellBackSquat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
+    static let barbbellBackSquat = Exercise(name: "Barbell Back Squat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
 
     static let dumbbellGobletSquat = Exercise(name: "Dumbbell Goblet Squat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.abs, .adductors, .calves, .glutes, .hamstrings, .lowerBack])
 
     static let legExtension = Exercise(name: "Leg Extension", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
 
-    static let barbellLunge = Exercise(name: "Barbell Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .hamstrings, .lowerBack])
+    static let barbellLunge = Exercise(name: "Barbell Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
 
     static let bodyweightWalkingLunge = Exercise(name: "Bodyweight Walking Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.calves, .glutes, .hamstrings])
 
@@ -118,7 +118,7 @@ class Exercise: Identifiable {
 
     // Core
 
-    static let planks = Exercise(name: "Planks", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .static, difficulty: .beginner, secondaryMuscles: [.lowerBack])
+    static let planks = Exercise(name: "Plank", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .static, difficulty: .beginner, secondaryMuscles: [.lowerBack])
 
     static let lyingLegRaise = Exercise(name: "Lying Leg Raise", targetMuscleGroup: .abs, exerciseType: .strength, equipment: .bodyweight, mechanics: .isolation, forceType: .pull, difficulty: .beginner, secondaryMuscles: [])
 
