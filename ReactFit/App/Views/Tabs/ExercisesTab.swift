@@ -64,20 +64,7 @@ struct ExercisesTab: View {
                 LazyVGrid(columns: createGridItems(), spacing: 8) {
                     ForEach(MuscleGroup.allCases) { muscleGroup in
                         NavigationLink(destination: ExerciseScreen(muscleGroup: muscleGroup, exercises: exercisesByMuscleGroup[muscleGroup] ?? [])) {
-                            VStack {
-                                HStack {
-                                    Text(muscleGroup.rawValue)
-                                        .modifier(SecondaryHeading())
-                                        .padding(.bottom, 2)
-                                    Spacer()
-                                }
-                                .padding(.leading, 8)
-                            }
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 60)
-                            .padding(8)
-                            .background(.indigo.opacity(0.3))
-                            .cornerRadius(4)
+                            MuscleGroupCard(muscleGroup: muscleGroup)
                         }
                     }
                 }
