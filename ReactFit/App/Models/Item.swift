@@ -5,4 +5,8 @@ class Item: Object, ObjectKeyIdentifiable {
     @Persisted var isComplete = false
     @Persisted var summary: String
     @Persisted var owner_id: String
+
+//    override class func primaryKey() -> String? {
+//        "id"
+//    }
 }

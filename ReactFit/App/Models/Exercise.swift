@@ -1,4 +1,5 @@
 import Foundation
+import RealmSwift
 // https://www.muscleandstrength.com/exercises
 
 // Backend stuff with MongoDB and Vapor
@@ -29,13 +30,9 @@ class Exercise: Identifiable {
     // Quads
 
     static let barbbellBackSquat = Exercise(name: "Barbell Back Squat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
-
     static let dumbbellGobletSquat = Exercise(name: "Dumbbell Goblet Squat", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .dumbbell, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.abs, .adductors, .calves, .glutes, .hamstrings, .lowerBack])
-
     static let legExtension = Exercise(name: "Leg Extension", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .machine, mechanics: .isolation, forceType: .push, difficulty: .beginner, secondaryMuscles: [])
-
     static let barbellLunge = Exercise(name: "Barbell Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .barbell, mechanics: .compound, forceType: .push, difficulty: .intermediate, secondaryMuscles: [.calves, .glutes, .hamstrings, .lowerBack])
-
     static let bodyweightWalkingLunge = Exercise(name: "Bodyweight Walking Lunge", targetMuscleGroup: .quads, exerciseType: .strength, equipment: .bodyweight, mechanics: .compound, forceType: .push, difficulty: .beginner, secondaryMuscles: [.calves, .glutes, .hamstrings])
 
     // Hamstrings
