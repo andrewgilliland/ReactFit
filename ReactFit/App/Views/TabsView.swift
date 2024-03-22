@@ -13,6 +13,7 @@ struct TabsView: View {
 //                        Image(systemName: "house")
 //                        Text("Home".localized(languageCode: languageCode))
 //                    }
+
                 NavigationView {
                     ProgramsTab()
                 }
