@@ -5,7 +5,7 @@ import RealmSwift
 // Backend stuff with MongoDB and Vapor
 // https://github.com/mongodb/mongo-swift-driver/tree/main/Examples/VaporExample
 
-class Exercise: Identifiable {
+class Exercise: Identifiable, Decodable {
     let id = UUID()
     let name: String
     let targetMuscleGroup: MuscleGroup
@@ -25,6 +25,20 @@ class Exercise: Identifiable {
         self.forceType = forceType
         self.difficulty = difficulty
         self.secondaryMuscles = secondaryMuscles
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+
+        id = try values.decode(Int.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        targetMuscleGroup = try values.decode(MuscleGroup.self, forKey: .targetMuscleGroup)
+        exerciseType = try values.decode(ExerciseType.self, forKey: .exerciseType)
+        equipment = try values.decode(Equipment.self, forKey: .equipment)
+        mechanics = try values.decode(Mechanics.self, forKey: .mechanics)
+        forceType = try values.decode(ForceType.self, forKey: .forceType)
+        difficulty = try values.decode(Difficulty.self, forKey: .difficulty)
+        secondaryMuscles = try values.decode([MuscleGroup].self, forKey: .secondaryMuscles)
     }
 
     // Quads

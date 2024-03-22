@@ -60,6 +60,8 @@
 		14D84CCF2BA92F8C00AF6294 /* MuscleGroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CCE2BA92F8C00AF6294 /* MuscleGroupCard.swift */; };
 		14D84CD32BAE3E3000AF6294 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CD22BAE3E3000AF6294 /* ErrorHandler.swift */; };
 		14D84CD52BAE48A000AF6294 /* RealmLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CD42BAE48A000AF6294 /* RealmLoaderView.swift */; };
+		14D84CD72BAE4E1000AF6294 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CD62BAE4E1000AF6294 /* API.swift */; };
+		14D84CD92BAE4EB000AF6294 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D84CD82BAE4EB000AF6294 /* Keys.swift */; };
 		14F0B21D2A6305330019497B /* ReactFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21C2A6305330019497B /* ReactFitApp.swift */; };
 		14F0B21F2A6305330019497B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0B21E2A6305330019497B /* TabsView.swift */; };
 		14F0B2212A6305340019497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F0B2202A6305340019497B /* Assets.xcassets */; };
@@ -120,6 +122,8 @@
 		14D84CCE2BA92F8C00AF6294 /* MuscleGroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupCard.swift; sourceTree = "<group>"; };
 		14D84CD22BAE3E3000AF6294 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		14D84CD42BAE48A000AF6294 /* RealmLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLoaderView.swift; sourceTree = "<group>"; };
+		14D84CD62BAE4E1000AF6294 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		14D84CD82BAE4EB000AF6294 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		14F0B2192A6305330019497B /* ReactFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F0B21C2A6305330019497B /* ReactFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactFitApp.swift; sourceTree = "<group>"; };
 		14F0B21E2A6305330019497B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				14AD76162A9E167A004BFCCA /* LinkedList.swift */,
 				1476ACCB2B28A94200A685C5 /* Item.swift */,
 				14D84CD22BAE3E3000AF6294 /* ErrorHandler.swift */,
+				14D84CD62BAE4E1000AF6294 /* API.swift */,
+				14D84CD82BAE4EB000AF6294 /* Keys.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				148ECA332A90040C00EE962D /* ProgramCard.swift in Sources */,
+				14D84CD92BAE4EB000AF6294 /* Keys.swift in Sources */,
 				148EC9262A68624500EE962D /* ExerciseModalDetails.swift in Sources */,
 				148EC8EC2A630F1F00EE962D /* HomeTab.swift in Sources */,
 				148EC8F32A63158300EE962D /* WorkoutsTab.swift in Sources */,
@@ -471,6 +478,7 @@
 				148ECA2F2A8FD25300EE962D /* ProgramsTab.swift in Sources */,
 				148EC92A2A69615D00EE962D /* Assets.swift in Sources */,
 				1476ACCC2B28A94200A685C5 /* Item.swift in Sources */,
+				14D84CD72BAE4E1000AF6294 /* API.swift in Sources */,
 				148ECA662A94F14B00EE962D /* ARViewCoordinator.swift in Sources */,
 				148534E22B260CA800D19713 /* LikeButton.swift in Sources */,
 				148ECA0D2A81CADA00EE962D /* LanguageCodes.swift in Sources */,

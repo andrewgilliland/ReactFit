@@ -1,3 +1,10 @@
+//
+//  Keys.swift
+//  ReactFit
+//
+//  Created by Andrew Gilliland on 3/22/24.
+//
+
 import Foundation
 
 enum Keys: String {
