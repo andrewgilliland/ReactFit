@@ -18,7 +18,7 @@ func loadAppConfig() -> AppConfig {
     let baseUrl = atlasConfigPropertyList["baseUrl"] as! String
 
     let atlasUrl = atlasConfigPropertyList["dataExplorerLink"]
-    if let atlastUrl = atlasUrl {
+    if atlasUrl != nil {
         return AppConfig(appId: appId, baseUrl: baseUrl, atlasUrl: atlasUrl as? String)
     } else {
         return AppConfig(appId: appId, baseUrl: baseUrl, atlasUrl: nil)

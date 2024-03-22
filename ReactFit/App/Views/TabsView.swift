@@ -2,20 +2,14 @@ import RealmSwift
 import SwiftUI
 
 struct TabsView: View {
-    @ObservedObject var app: RealmSwift.App
+    @ObservedRealmObject var itemGroup: ItemGroup
     @State private var languageCode = LanguageCode.english
 
     var body: some View {
         NavigationView {
             TabView {
-//                HomeTab(languageCode: $languageCode)
-//                    .tabItem {
-//                        Image(systemName: "house")
-//                        Text("Home".localized(languageCode: languageCode))
-//                    }
-
                 NavigationView {
-                    ProgramsTab()
+                    ProgramsTab(itemGroup: itemGroup)
                 }
                 .tabItem {
                     Image(systemName: "calendar")

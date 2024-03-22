@@ -1,6 +1,8 @@
+import RealmSwift
 import SwiftUI
 
 struct ProgramsTab: View {
+    @ObservedRealmObject var itemGroup: ItemGroup
     let programs: [Program] = [.dbStarterPlan, .bodybuilderBeginner, .shortcutToSize]
 
     let leadingPadding = 8
@@ -15,6 +17,13 @@ struct ProgramsTab: View {
                     }
                 }
                 .padding(.horizontal)
+
+                List {
+                    ForEach(itemGroup.items) { item in
+                        Text("\(item.summary)")
+                            .foregroundStyle(Theme.cyan500)
+                    }
+                }
             }
         }
     }
@@ -24,8 +33,8 @@ struct ProgramsTab: View {
     }
 }
 
-struct ProgramsTab_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgramsTab()
-    }
-}
+// struct ProgramsTab_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProgramsTab(itemGroup: )
+//    }
+// }
